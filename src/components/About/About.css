@@ -1,0 +1,121 @@
+.about-section {
+  /* inherits section padding */
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image-wrap {
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+.about-img-placeholder {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--surface2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.04em;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  right: -1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 16px;
+  padding: 0.9rem 1.1rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  line-height: 1.2;
+}
+
+.about-badge strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.about-badge span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.about-content p {
+  color: var(--text2);
+  line-height: 1.8;
+  margin: 0 0 1.1rem;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1.75rem 0 2.2rem;
+  flex-wrap: wrap;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.about-stat strong {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.about-stat span {
+  font-size: 0.78rem;
+  color: var(--text2);
+  font-weight: 500;
+}
+
+.about-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-img,
+  .about-img-placeholder {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-badge {
+    right: calc(50% - 150px - 1rem);
+  }
+}

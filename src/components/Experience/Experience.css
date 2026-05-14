@@ -1,0 +1,108 @@
+.exp-section {
+  /* inherits section padding */
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  bottom: 0.45rem;
+  width: 2px;
+  background: var(--line);
+  border-radius: 2px;
+}
+
+.tl-item {
+  position: relative;
+  padding-left: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+.tl-dot {
+  position: absolute;
+  left: -1.68rem;
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2.5px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.tl-body {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  transition: box-shadow 200ms, border-color 200ms;
+}
+
+.tl-body:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+
+.tl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.tl-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tl-company {
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  color: var(--text2);
+}
+
+.tl-period {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tl-detail {
+  color: var(--text2);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.section-subtitle {
+    max-width: initial!important;
+}
+
+.text-center {
+    text-align: center;
+    display: block!important;
+}
+
+#experience .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
