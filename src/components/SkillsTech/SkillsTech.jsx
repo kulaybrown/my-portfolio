@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { skills } from "../../data/data";
-import "./SkillsTech.css";
 
 function SkillIcon({ skill }) {
   const slug = skill.slug.toLowerCase();
@@ -14,11 +13,11 @@ function SkillIcon({ skill }) {
 
   return (
     <span
-      className="skill-icon"
+      className="inline-block h-[42px] w-[42px] min-h-[42px] min-w-[42px] shrink-0 flex-none bg-[var(--icon-color)] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain] [-webkit-mask-position:center] [-webkit-mask-repeat:no-repeat] [-webkit-mask-size:contain]"
       role="img"
       aria-label={skill.name}
       style={{
-        backgroundColor: iconColor,
+        "--icon-color": iconColor,
         WebkitMaskImage: `url("${source}")`,
         maskImage: `url("${source}")`,
       }}
@@ -27,7 +26,7 @@ function SkillIcon({ skill }) {
         src={source}
         alt=""
         aria-hidden="true"
-        className="skill-icon-probe"
+        className="hidden"
         onError={() => {
           setHasError(true);
         }}
@@ -38,18 +37,18 @@ function SkillIcon({ skill }) {
 
 export default function SkillsTech() {
   return (
-    <section id="skills" className="skills-section">
-      <div className="container">
-        <p className="section-label">Expertise</p>
-        <h2 className="section-title">Skills &amp; Technologies</h2>
-        <p className="section-subtitle">
+    <section id="skills" className="bg-[var(--surface2)] py-14 md:py-20">
+      <div className="mx-auto w-[min(1100px,calc(100vw-3rem))]">
+        <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Expertise</p>
+        <h2 className="mb-3 text-[clamp(1.7rem,2.8vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em]">Skills &amp; Technologies</h2>
+        <p className="mb-10 max-w-[52ch] leading-[1.7] text-[var(--text2)]">
           Tools and technologies I work with to build and ship great products.
         </p>
-        <div className="skills-grid">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-4">
           {skills.map((skill) => (
-            <div key={skill.slug} className="skill-card">
+            <div key={skill.slug} className="flex cursor-default flex-col items-center gap-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-4 pb-4 pt-6 text-center transform-gpu transform will-change-transform hover:-translate-y-[5px] transition-all duration-300 ease-out hover:-translate-y-[5px] hover:border-[var(--accent)] hover:shadow-[var(--shadow)]">
               <SkillIcon skill={skill} />
-              <span className="skill-name">{skill.name}</span>
+              <span className="text-xs font-semibold leading-[1.3] text-[var(--text2)]">{skill.name}</span>
             </div>
           ))}
         </div>
