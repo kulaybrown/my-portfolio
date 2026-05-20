@@ -29,9 +29,9 @@ export default function About() {
           </p>
           <p className="mb-4 leading-[1.8] text-[var(--text2)]">
             Proven track record of building reusable code components and ensuring
-            cross-browser compatibility. Eager to leverage expertise in UI development and a
-            commitment to high performance to contribute to innovative projects at your
-            company.
+            cross-browser compatibility. I actively leverage AI-assisted development tools
+            like GitHub Copilot and Gemini to accelerate workflows, improve code quality,
+            and ship features faster — without sacrificing attention to detail.
           </p>
           <div className="my-7 flex flex-wrap gap-6">
             <div className="flex flex-col gap-1">

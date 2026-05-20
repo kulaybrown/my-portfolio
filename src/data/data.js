@@ -1,3 +1,5 @@
+import iconAcf from "../assets/images/icon-acf.png";
+
 export const projects = [
   {
     id: 1,
@@ -117,10 +119,13 @@ export const skills = [
   { name: "ReactJS", slug: "react", color: "#61DAFB" },
   { name: "Next.js", slug: "nextdotjs", color: "#000000" },
   { name: "Node.js", slug: "nodedotjs", color: "#339933" },
+  { name: "Strapi", slug: "strapi", color: "#4945FF" },
   { name: "PHP", slug: "php", color: "#777BB4" },
   { name: "WordPress", slug: "wordpress", color: "#21759B" },
+  { name: "ACF", slug: "advancedcustomfields", color: "#00E4BC", icon: iconAcf },
   { name: "jQuery", slug: "jquery", color: "#0769AD" },
   { name: "Bootstrap", slug: "bootstrap", color: "#7952B3" },
+  { name: "Tailwind CSS", slug: "tailwindcss", color: "#06B6D4" },
   { name: "SCSS", slug: "sass", color: "#CC6699" },
   { name: "Less", slug: "less", color: "#1D365D" },
   { name: "Figma", slug: "figma", color: "#F24E1E" },
@@ -128,6 +133,10 @@ export const skills = [
   { name: "Illustrator", slug: "adobeillustrator", color: "#FF9A00" },
   { name: "InDesign", slug: "adobeindesign", color: "#FF3366" },
   { name: "VS Code", slug: "visualstudiocode", color: "#007ACC" },
+  { name: "GitHub Copilot", slug: "githubcopilot", color: "#000000" },
+  { name: "Gemini", slug: "googlegemini", color: "#8E75B2" },
+  { name: "ChatGPT", slug: "openai", color: "#412991" },
+  { name: "REST API", slug: "postman", color: "#FF6C37" },
 ];
 
 export const experience = [

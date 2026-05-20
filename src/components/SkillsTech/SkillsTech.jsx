@@ -7,8 +7,22 @@ function SkillIcon({ skill }) {
   const [hasError, setHasError] = useState(false);
   const iconColor = skill.color || "#4b5563";
 
+  if (skill.icon) {
+    return (
+      <img
+        src={skill.icon}
+        alt={skill.name}
+        className="h-[42px] w-[42px] object-contain"
+      />
+    );
+  }
+
   if (hasError) {
-    return null;
+    return (
+      <span className="flex h-[42px] w-[42px] items-center justify-center text-[0.6rem] font-bold leading-tight text-[#1e3a8a] text-center">
+        {skill.name}
+      </span>
+    );
   }
 
   return (
