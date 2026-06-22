@@ -123,6 +123,7 @@ export const skills = [
   { name: "PHP", slug: "php", color: "#777BB4" },
   { name: "WordPress", slug: "wordpress", color: "#21759B" },
   { name: "ACF", slug: "advancedcustomfields", color: "#00E4BC", icon: iconAcf },
+  { name: "Shopify", slug: "shopify", color: "#95bf47" },
   { name: "jQuery", slug: "jquery", color: "#0769AD" },
   { name: "Bootstrap", slug: "bootstrap", color: "#7952B3" },
   { name: "Tailwind CSS", slug: "tailwindcss", color: "#06B6D4" },
