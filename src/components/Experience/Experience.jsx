@@ -14,7 +14,7 @@ export default function Experience() {
             <article key={job.id} className="relative pb-8 pl-7 last:pb-0">
               <div className="absolute left-[-1.68rem] top-[0.3rem] h-2.5 w-2.5 rounded-full border-[2.5px] border-[var(--bg)] bg-[var(--accent)] shadow-[0_0_0_2px_var(--accent)]" aria-hidden="true" />
               <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-6 py-5 transition hover:border-[var(--accent)] hover:shadow-[var(--shadow)]">
-                <div className="mb-2 flex flex-wrap items-start justify-between gap-4">
+                <div className="mb-3 flex flex-wrap items-start justify-between gap-4">
                   <div>
                     <h3 className="m-0 text-base font-bold">{job.role}</h3>
                     <p className="mt-1 text-sm text-[var(--text2)]">
@@ -25,7 +25,13 @@ export default function Experience() {
                   </div>
                   <span className="shrink-0 whitespace-nowrap rounded-full bg-[var(--accent-light)] px-3 py-1 text-xs font-bold text-[var(--accent)]">{job.period}</span>
                 </div>
-                <p className="m-0 text-[0.9rem] leading-[1.7] text-[var(--text2)]">{job.details}</p>
+                
+                {/* Render details as list items */}
+                <ul className="list-disc pl-5 space-y-1.5 text-[0.9rem] leading-[1.7] text-[var(--text2)]">
+                  {job.details.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
+                </ul>
               </div>
             </article>
           ))}

@@ -147,8 +147,10 @@ export const experience = [
     company: "iStack Holdings",
     location: "Makati, Philippines",
     period: "Aug 2022 – Apr 2026",
-    details:
-      "Transformed Figma designs into mobile-responsive interfaces with cross-browser compatibility and optimized performance using HTML, CSS, and ReactJS. Maintained and enhanced existing websites.",
+    details: [
+      "Translated Figma designs into responsive, cross-browser compatible UIs using React.js, HTML5, and CSS3.",
+      "Maintained and optimized existing web applications for performance, speed, and responsiveness."
+    ]  
   },
   {
     id: 2,
@@ -156,8 +158,11 @@ export const experience = [
     company: "MyGolfingStore",
     location: "US (Remote)",
     period: "Aug 2023 – Dec 2025",
-    details:
-      "Engineered landing pages and funnel pages using a custom PHP framework and WordPress.",
+    details: [
+        "Designed and engineered high-converting landing pages and marketing funnels, integrating them seamlessly into a custom PHP framework and WordPress ecosystem.",
+        "Collaborated closely with marketing teams to implement UI/UX best practices that directly optimized conversion rates and user retention.",
+        "Managed end-to-end deployment of promotional web assets, ensuring fast load times and reliable database integration."
+    ]
   },
   {
     id: 3,
@@ -165,7 +170,9 @@ export const experience = [
     company: "IAmMarketing",
     location: "US (Remote)",
     period: "Feb 2021 – Aug 2023",
-    details: "Designed and built landing pages and funnel pages for CBSplit.",
+    details: [
+      "Designed and developed optimized landing pages and direct-response sales funnels for CBSplit."
+    ],
   },
   {
     id: 4,
@@ -173,8 +180,10 @@ export const experience = [
     company: "PenBrothers",
     location: "Makati, Philippines",
     period: "Jan 2020 – Jan 2021",
-    details:
-      "Converted designs into responsive interfaces and maintained websites using HTML, CSS, WordPress, Drupal, and ReactJS.",
+    details: [
+      "Developed responsive user interfaces and themes using WordPress, Drupal, React.js, HTML, and CSS.",
+      "Maintained, audited, and resolved cross-browser compatibility issues for existing client websites."
+    ]
   },
   {
     id: 5,
@@ -182,8 +191,13 @@ export const experience = [
     company: "iStack Holdings",
     location: "Makati, Philippines",
     period: "Sep 2017 – Sep 2019",
-    details:
-      "Built reusable components, integrated ActiveCampaign, optimized app speed and scalability, validated user input, and collaborated across teams.",
+    details: [
+      "Developed modular, reusable UI components in React.js to streamline development workflows and ensure engineering consistency across future projects.",
+      "Integrated ActiveCampaign APIs and automation hooks for streamlined lead generation and user tracking.",
+      "Optimized client-side application performance, resulting in measurable improvements to page load speeds and scalability.",
+      "Implemented robust client-side form validation guardrails to ensure clean data delivery to backend services."
+    ]
+
   },
   {
     id: 6,
@@ -191,8 +205,9 @@ export const experience = [
     company: "IBM",
     location: "Quezon City, Philippines",
     period: "Nov 2016 – Mar 2017",
-    details:
-      "Developed functional and mobile-responsive interfaces with HTML, CSS, and JavaScript.",
+    details: [
+      "Converted wireframes into semantic, cross-browser compatible code using JavaScript, HTML, and CSS.",
+    ]
   },
   {
     id: 7,
@@ -200,8 +215,11 @@ export const experience = [
     company: "ABSS",
     location: "Makati, Philippines",
     period: "Nov 2013 – Sep 2016",
-    details:
-      "Converted designs to HTML, developed WordPress and Laravel templates, produced responsive websites, and created email newsletters.",
+    details: [
+      "Developed custom, lightweight themes and templates for WordPress and Laravel using CSS3, JavaScript, and jQuery.",
+      "Built and engineered cross-platform responsive layouts, moving legacy web assets into modern fluid grids.",
+      "Designed, coded, and tested highly responsive, cross-client email newsletters and marketing templates."
+    ]
   },
   {
     id: 8,
@@ -209,8 +227,11 @@ export const experience = [
     company: "XVA Media",
     location: "Quezon City, Philippines",
     period: "May 2013 – Nov 2013",
-    details:
-      "Designed email newsletters, created website mockups, converted templates, and maintained existing websites.",
+    details: [
+      "Designed comprehensive website mockups and successfully translated them into functional, productionready front-end templates.",
+      "Crafted and optimized HTML email newsletters ensuring robust rendering across popular email clients.",
+      "Troubled-shot, patched, and regularly updated diverse client web properties."
+    ]
   },
   {
     id: 9,
@@ -218,6 +239,8 @@ export const experience = [
     company: "Affinity Express",
     location: "Quezon City, Philippines",
     period: "Sep 2010 – Dec 2011",
-    details: "Designed print ads for newspapers, brochures, and magazines.",
+    details: [
+      "Designed print advertisements, brochures, and layouts for newspapers and magazines under tight deadlines."
+    ]
   },
 ];
