@@ -3,20 +3,6 @@ import iconAcf from "../assets/images/icon-acf.png";
 export const projects = [
   {
     id: 1,
-    name: "CreatorConf",
-    description: "Marketing website dedicated to the CreatorConf event.",
-    tech: ["ReactJS", "React Boilerplate"],
-    url: "https://creatorconf.com/",
-  },
-  {
-    id: 2,
-    name: "Conference Nights",
-    description:
-      "Affiliate event listing site with curated schedules and details for company-related gatherings.",
-    tech: ["ReactJS", "React Boilerplate"],
-  },
-  {
-    id: 3,
     name: "Aspen Street Lodge",
     description:
       "High-end real estate and lodging website with detailed property views and premium imagery.",
@@ -24,15 +10,16 @@ export const projects = [
     url: "https://aspenstreetlodge.com/",
   },
   {
-    id: 4,
+    id: 2,
     name: "Waterline Square",
     description:
       "Luxury real estate platform with condominiums and premium rentals, featuring galleries and virtual tours.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
-    url: "http://18.188.183.102/",
+    url: ""
+    // url: "http://18.188.183.102/",
   },
   {
-    id: 5,
+    id: 3,
     name: "D'USSE",
     description:
       "Sophisticated brand website focused on product details and high-quality visual brand experiences.",
@@ -40,7 +27,7 @@ export const projects = [
     url: "https://www.dusse.com/",
   },
   {
-    id: 6,
+    id: 4,
     name: "Gurneys Resorts",
     description:
       "Comprehensive hospitality and real estate site for hotels and residential resort listings.",
@@ -48,14 +35,14 @@ export const projects = [
     url: "https://www.gurneysresorts.com/",
   },
   {
-    id: 7,
+    id: 5,
     name: "Live Gurneys",
     description:
       "Specialized real estate site featuring residential hotels and resorts with full specs and imagery.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
   },
   {
-    id: 8,
+    id: 6,
     name: "Affiliate World Conferences",
     description:
       "Main conference platform showcasing global events, speaker lineups, agendas, and ticket information.",
@@ -63,7 +50,7 @@ export const projects = [
     url: "http://affiliateworldconferences.com/",
   },
   {
-    id: 9,
+    id: 7,
     name: "Affiliate World Europe",
     description:
       "Regional event experience for Europe with localized schedules, venue details, and registration flow.",
@@ -71,7 +58,7 @@ export const projects = [
     url: "http://affiliateworldconferences.com/europe",
   },
   {
-    id: 10,
+    id: 8,
     name: "Affiliate World Dubai",
     description:
       "Dedicated conference landing site for Dubai featuring event highlights, partners, and attendee resources.",
@@ -79,7 +66,7 @@ export const projects = [
     url: "http://affiliateworldconferences.com/dubai",
   },
   {
-    id: 11,
+    id: 9,
     name: "Affiliate World Asia",
     description:
       "Asia-focused conference website with destination details, program information, and conversion-driven pages.",
@@ -87,7 +74,7 @@ export const projects = [
     url: "http://affiliateworldconferences.com/asia",
   },
   {
-    id: 12,
+    id: 10,
     name: "Affiliate World Americas",
     description:
       "Americas edition event site highlighting speakers, sessions, and streamlined attendee sign-up journeys.",
@@ -95,7 +82,7 @@ export const projects = [
     url: "http://affiliateworldconferences.com/americas",
   },
   {
-    id: 13,
+    id: 11,
     name: "Affiliate World Meetups",
     description:
       "Global meetup events connecting affiliate marketers, industry leaders, and networking opportunities.",
@@ -103,12 +90,26 @@ export const projects = [
     url: "https://affiliateworldmeetups.com/",
   },
   {
-    id: 14,
+    id: 12,
     name: "AdWorld Prime",
     description:
       "Premier advertising and marketing event connecting industry leaders and professionals.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "https://adworldprime.com/",
+  },
+  {
+    id: 13,
+    name: "CreatorConf",
+    description: "Marketing website dedicated to the CreatorConf event.",
+    tech: ["ReactJS", "React Boilerplate"],
+    url: "https://creatorconf.com/",
+  },
+  {
+    id: 14,
+    name: "Conference Nights",
+    description:
+      "Affiliate event listing site with curated schedules and details for company-related gatherings.",
+    tech: ["ReactJS", "React Boilerplate"],
   },
 ];
 
