@@ -2,6 +2,14 @@ import iconAcf from "../assets/images/icon-acf.png";
 
 export const projects = [
   {
+    id: 0,
+    name: "IAMTHELOSWORLD",
+    description:
+      "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    url: "https://iamthelosworld.com/",
+  },
+  {
     id: 1,
     name: "Aspen Street Lodge",
     description:

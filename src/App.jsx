@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import SkillsTech from "./components/SkillsTech";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import GameDev from "./components/GameDev";
 import Experience from "./components/Experience";
 import { Theme } from "@radix-ui/themes";
 import "./index.css";
@@ -37,6 +38,7 @@ export default function App() {
         <SkillsTech />
         <About />
         <Projects />
+        <GameDev />
         <Experience />
       </main>
       <footer className="mt-4 border-t border-[var(--line)] py-6">
