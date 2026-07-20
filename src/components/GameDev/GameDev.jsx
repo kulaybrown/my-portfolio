@@ -9,7 +9,7 @@ const gameProjects = [
     image: jumpyRunImg,
     description:
       "An endless pixel-platformer about momentum, mistimed jumps, and getting back up. One button, infinite ways to fail beautifully.",
-    link: "https://www.iamthelosworld.com/jumpyrun",
+    link: "https://www.iamthelosworld.com/jumpy-run",
     status: "In Development",
     tech: ["React", "Vite", "Tailwind CSS", "HTML5 Canvas", "HTML5 Web Audio API", "PostgreSQL", "Supabase", "Node.js"],
   },
