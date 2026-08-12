@@ -153,12 +153,13 @@ export const experience = [
   {
     id: 1,
     role: "Web Developer / Front End",
-    company: "iStack Holdings",
+    company: "iStack Conferences",
     location: "Makati, Philippines",
     period: "Aug 2022 – Apr 2026",
     details: [
-      "Translated Figma designs into responsive, cross-browser compatible UIs using React.js, HTML5, and CSS3.",
-      "Maintained and optimized existing web applications for performance, speed, and responsiveness."
+      "Translated complex Figma designs into responsive, cross-browser compatible user interfaces using React.js, HTML5, and CSS3 / Tailwind CSS.",
+      "Maintained and optimized core web applications, improving client-side page load speeds, overall site performance, and mobile responsiveness.",
+      "Leveraged AI engineering tools (GitHub Copilot, Gemini) to accelerate front-end code generation and debug complex interface logic."
     ]  
   },
   {
@@ -166,11 +167,11 @@ export const experience = [
     role: "Web Designer / Web Developer",
     company: "MyGolfingStore",
     location: "US (Remote)",
-    period: "Aug 2023 – Dec 2025",
+    period: "Aug 2023 – Nov 2025",
     details: [
-        "Designed and engineered high-converting landing pages and marketing funnels, integrating them seamlessly into a custom PHP framework and WordPress ecosystem.",
-        "Collaborated closely with marketing teams to implement UI/UX best practices that directly optimized conversion rates and user retention.",
-        "Managed end-to-end deployment of promotional web assets, ensuring fast load times and reliable database integration."
+      "Engineered high-converting landing pages and direct-response marketing funnels integrated into a custom PHP framework and WordPress ecosystem.",
+      "Collaborated with marketing teams to implement UI/UX best practices that directly optimized conversion rates and user retention.",
+      "Managed end-to-end deployment of promotional web assets, ensuring high performance, fast rendering, and reliable backend integration."
     ]
   },
   {
@@ -180,7 +181,8 @@ export const experience = [
     location: "US (Remote)",
     period: "Feb 2021 – Aug 2023",
     details: [
-      "Designed and developed optimized landing pages and direct-response sales funnels for CBSplit."
+      "Designed and developed direct-response sales funnels and performance-optimized landing pages for CBSplit.",
+      "Implemented custom front-end styling and responsive layouts ensuring seamless functionality across mobile and desktop devices."
     ],
   },
   {
@@ -188,23 +190,22 @@ export const experience = [
     role: "Fullstack Web Developer",
     company: "PenBrothers",
     location: "Makati, Philippines",
-    period: "Jan 2020 – Jan 2021",
+    period: "Jan 2020 – Dec 2020",
     details: [
-      "Developed responsive user interfaces and themes using WordPress, Drupal, React.js, HTML, and CSS.",
-      "Maintained, audited, and resolved cross-browser compatibility issues for existing client websites."
+      "Developed responsive user interfaces and custom themes using WordPress, Drupal, React.js, HTML, and CSS.",
+      "Maintained web assets, conducted code audits, and resolved cross-browser compatibility issues across multiple client sites."
     ]
   },
   {
     id: 5,
     role: "Web Developer / Front End",
-    company: "iStack Holdings",
+    company: "iStack Conferences",
     location: "Makati, Philippines",
     period: "Sep 2017 – Sep 2019",
     details: [
-      "Developed modular, reusable UI components in React.js to streamline development workflows and ensure engineering consistency across future projects.",
-      "Integrated ActiveCampaign APIs and automation hooks for streamlined lead generation and user tracking.",
-      "Optimized client-side application performance, resulting in measurable improvements to page load speeds and scalability.",
-      "Implemented robust client-side form validation guardrails to ensure clean data delivery to backend services."
+      "Developed modular, reusable UI components in React.js to streamline development workflows and ensure front-end design consistency.",
+      "Integrated ActiveCampaign REST APIs and automation hooks for streamlined lead generation and automated user tracking.",
+      "Optimized client-side application performance, resulting in measurable improvements to page loading speeds and scalability."
     ]
 
   },
@@ -226,8 +227,8 @@ export const experience = [
     period: "Nov 2013 – Sep 2016",
     details: [
       "Developed custom, lightweight themes and templates for WordPress and Laravel using CSS3, JavaScript, and jQuery.",
-      "Built and engineered cross-platform responsive layouts, moving legacy web assets into modern fluid grids.",
-      "Designed, coded, and tested highly responsive, cross-client email newsletters and marketing templates."
+      "Migrated legacy web assets into modern cross-platform fluid grids and responsive layouts.",
+      "Designed and coded responsive HTML email newsletters ensuring accurate rendering across all major email clients."
     ]
   },
   {
@@ -237,9 +238,7 @@ export const experience = [
     location: "Quezon City, Philippines",
     period: "May 2013 – Nov 2013",
     details: [
-      "Designed comprehensive website mockups and successfully translated them into functional, productionready front-end templates.",
-      "Crafted and optimized HTML email newsletters ensuring robust rendering across popular email clients.",
-      "Troubled-shot, patched, and regularly updated diverse client web properties."
+      "Designed website mockups and successfully translated them into functional, production-ready front-end templates."
     ]
   },
   {
