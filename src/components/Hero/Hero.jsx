@@ -1,4 +1,4 @@
-import heroImg from "../../assets/images/hero-img2.png";
+import heroImg from "../../assets/images/hero-img3.png";
 
 export default function Hero() {
   return (
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         <div className="relative order-first flex items-center justify-center lg:order-none">
-          <div className="relative z-10 aspect-[3/4] w-full max-w-[400px] overflow-hidden md:max-w-[550px]">
+          <div className="relative z-10 w-full max-w-[400px] overflow-hidden md:max-w-[550px]">
             <img
               src={heroImg}
               alt="Angelo Lagumbay"

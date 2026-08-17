@@ -60,3 +60,10 @@ img {
 a {
   color: inherit;
 }
+
+/* Prevent transitions and animations during window resizing */
+.resize-animation-stopper,
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}

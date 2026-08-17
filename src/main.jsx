@@ -3,6 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "@radix-ui/themes/styles.css";
+import { preloadAllImages } from "./utils/preloadImages";
+
+// Preload critical images asynchronously in the background as early as possible
+preloadAllImages();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

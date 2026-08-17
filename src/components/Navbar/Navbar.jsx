@@ -52,6 +52,29 @@ export default function Navbar({ theme, onToggleTheme }) {
     return () => document.removeEventListener("click", close);
   }, [menuOpen]);
 
+  useEffect(() => {
+    let resizeTimer;
+    const handleResize = () => {
+      document.body.classList.add("resize-animation-stopper");
+      
+      // Auto-close menu if resizing to desktop
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 300);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      clearTimeout(resizeTimer);
+    };
+  }, []);
+
   const scrollTo = (e, id) => {
     e.preventDefault();
     setMenuOpen(false);
@@ -77,7 +100,7 @@ export default function Navbar({ theme, onToggleTheme }) {
         </a>
 
         <div
-          className={`fixed left-0 right-0 top-[var(--nav-h)] flex flex-col items-stretch gap-1 bg-[var(--surface)] px-6 pb-6 pt-4 shadow-[var(--shadow-lg)] transition-all duration-300 md:static md:top-auto md:flex-row md:items-center md:gap-1 md:bg-transparent md:px-0 md:py-0 md:shadow-none ${
+          className={`fixed left-0 right-0 top-[var(--nav-h)] flex flex-col items-stretch gap-1 bg-[var(--surface)] px-6 pb-6 pt-4 shadow-[var(--shadow-lg)] transition-[transform,opacity] duration-300 md:static md:top-auto md:flex-row md:items-center md:gap-1 md:bg-transparent md:px-0 md:py-0 md:shadow-none md:transition-none ${
             menuOpen
               ? "pointer-events-auto translate-y-0 opacity-100"
               : "pointer-events-none -translate-y-[110%] opacity-0 md:pointer-events-auto md:translate-y-0 md:opacity-100"
