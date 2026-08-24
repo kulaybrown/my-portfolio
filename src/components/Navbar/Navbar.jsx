@@ -78,6 +78,9 @@ export default function Navbar({ theme, onToggleTheme }) {
   const scrollTo = (e, id) => {
     e.preventDefault();
     setMenuOpen(false);
+    if (window.location.hash !== `#${id}`) {
+      window.history.pushState(null, "", `#${id}`);
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
