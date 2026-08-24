@@ -75,14 +75,7 @@ export default function Navbar({ theme, onToggleTheme }) {
     };
   }, []);
 
-  const scrollTo = (e, id) => {
-    e.preventDefault();
-    setMenuOpen(false);
-    if (window.location.hash !== `#${id}`) {
-      window.history.pushState(null, "", `#${id}`);
-    }
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  const handleNavClick = () => setMenuOpen(false);
 
   return (
     <nav
@@ -97,7 +90,7 @@ export default function Navbar({ theme, onToggleTheme }) {
         <a
           className="shrink-0 text-base font-bold tracking-[-0.01em] text-[var(--text)] no-underline transition-colors hover:text-[var(--accent)]"
           href="#hero"
-          onClick={(e) => scrollTo(e, "hero")}
+          onClick={handleNavClick}
         >
           Angelo H. Lagumbay
         </a>
@@ -115,7 +108,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               key={link.id}
               href={`#${link.id}`}
               className="rounded-lg px-2 py-3 text-base font-medium text-[var(--text2)] no-underline transition md:px-3 md:py-2 md:text-sm hover:bg-[var(--accent-light)] hover:text-[var(--accent)]"
-              onClick={(e) => scrollTo(e, link.id)}
+              onClick={handleNavClick}
             >
               {link.label}
             </a>

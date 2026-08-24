@@ -6,11 +6,14 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import GameDev from "./components/GameDev";
 import Experience from "./components/Experience";
+import useHashScrollOnLoad from "./hooks/useHashScrollOnLoad";
 import { Theme } from "@radix-ui/themes";
 import "./index.css";
 
 export default function App() {
   const [theme, setTheme] = useState("light");
+
+  useHashScrollOnLoad();
 
   useEffect(() => {
     const stored = localStorage.getItem("portfolio-theme");
