@@ -49,7 +49,7 @@ export default function About() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a
-              href="mailto:anelolag@gmail.com"
+              href="mailto:angelolagumbay.dev@gmail.com"
               className="inline-flex items-center gap-1 rounded-full border-2 border-[var(--accent)] bg-[var(--accent)] px-6 py-2.5 text-sm font-semibold text-white no-underline will-change-transform transition-all duration-300 hover:-translate-y-[5px] hover:border-[var(--accent-hover)] hover:bg-[var(--accent-hover)] hover:text-white hover:shadow-[var(--shadow)]"
             >
               Let&apos;s work together

@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
           <div className="mb-8 flex flex-wrap gap-3">
             <a
-              href="mailto:anelolag@gmail.com"
+              href="mailto:angelolagumbay.dev@gmail.com"
               className="inline-flex items-center gap-1 rounded-full border-2 border-[var(--accent)] bg-[var(--accent)] px-6 py-2.5 text-sm font-semibold text-white no-underline will-change-transform transition-all duration-300 hover:-translate-y-[5px] hover:border-[var(--accent-hover)] hover:bg-[var(--accent-hover)] hover:text-white hover:shadow-[var(--shadow)]"
             >
               Get in touch
@@ -38,7 +38,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[var(--text2)]">
-            <a className="text-[var(--text2)] transition-colors hover:text-[var(--accent)] hover:no-underline" href="mailto:anelolag@gmail.com">anelolag@gmail.com</a>
+            <a className="text-[var(--text2)] transition-colors hover:text-[var(--accent)] hover:no-underline" href="mailto:angelolagumbay.dev@gmail.com">angelolagumbay.dev@gmail.com</a>
             <span className="select-none text-[var(--line)]">·</span>
             <a className="text-[var(--text2)] transition-colors hover:text-[var(--accent)] hover:no-underline" href="tel:+639062764229">+63 906 276 4229</a>
             <span className="select-none text-[var(--line)]">·</span>
