@@ -3,13 +3,19 @@ import aboutImg from "../assets/images/about-img.jpg";
 import jumpyRunImg from "../assets/images/jumpyrun-img.jpg";
 import streetBusterImg from "../assets/images/streetbuster-img.jpg";
 import iconAcf from "../assets/images/icon-acf.png";
+import d1 from "../assets/images/design/d1.webp";
+import d2 from "../assets/images/design/d2.webp";
+import d3 from "../assets/images/design/d3.webp";
 
 const imagesToPreload = [
   heroImg,
   aboutImg,
   jumpyRunImg,
   streetBusterImg,
-  iconAcf
+  iconAcf,
+  d1,
+  d2,
+  d3
 ];
 
 /**
