@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/images/about-img.jpg";
+import aboutImg from "../../assets/images/pixel-me-computer.jpg";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
           <img
             src={aboutImg}
             alt="About Angelo"
-            className="mx-auto block aspect-[4/5] w-full max-w-[300px] rounded-3xl object-cover shadow-[var(--shadow-lg)] md:max-w-[460px]"
+            className="mx-auto block aspect-[4/5] w-full rounded-2xl object-cover shadow-[var(--shadow-lg)] md:max-w-[460px]"
           />
           <div className="absolute bottom-6 right-[calc(50%-150px-1rem)] rounded-2xl bg-[var(--accent)] px-4 py-3 text-center leading-tight text-white shadow-[var(--shadow-lg)] md:right-[-1rem]">
             <strong className="block text-[1.8rem] font-extrabold leading-none">10+</strong>

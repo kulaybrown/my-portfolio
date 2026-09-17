@@ -48,12 +48,20 @@ section[id] {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Geist Pixel", "Press Start 2P", monospace !important;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span, a, div, button, input, select, textarea {
+  font-family: "Geist Pixel", "Press Start 2P", monospace !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.04em !important;
 }
 
 img {
@@ -70,4 +78,53 @@ a {
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+/* Floating developer elements around avatar */
+@keyframes floatKeyboard {
+  0% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-15px) translateX(5px) rotate(-13deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-10deg);
+  }
+}
+
+@keyframes floatMouse {
+  0% {
+    transform: translateY(0px) rotate(15deg);
+  }
+  50% {
+    transform: translateY(-12px) translateX(-4px) rotate(11deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(15deg);
+  }
+}
+
+@keyframes floatHeadset {
+  0% {
+    transform: translateY(0px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-18px) translateX(6px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(5deg);
+  }
+}
+
+.float-keyboard {
+  animation: floatKeyboard 6s ease-in-out infinite;
+}
+
+.float-mouse {
+  animation: floatMouse 5s ease-in-out infinite;
+}
+
+.float-headset {
+  animation: floatHeadset 7s ease-in-out infinite;
 }

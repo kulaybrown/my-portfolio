@@ -1,4 +1,7 @@
-import heroImg from "../../assets/images/hero-img3.png";
+import heroImg from "../../assets/images/pixel-me.png";
+import keyboard from "../../assets/images/keyboard.png";
+import mouse from "../../assets/images/mouse.png";
+import headset from "../../assets/images/headset.png";
 
 export default function Hero() {
   return (
@@ -57,6 +60,23 @@ export default function Hero() {
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-[-14%] z-0 rounded-[60%_40%_55%_45%/50%_60%_40%_55%] bg-[conic-gradient(from_180deg_at_50%_60%,#6d28d9_0deg,#2563eb_90deg,#db2777_200deg,#7c3aed_300deg,#6d28d9_360deg)] opacity-35 blur-[36px] [html[data-theme='dark']_&]:opacity-55"
+          />
+          
+          {/* Floating developer gear */}
+          <img
+            src={keyboard}
+            alt="Keyboard"
+            className="absolute z-20 pointer-events-none select-none w-[10rem] lg:w-[12rem] h-auto left-[-20%] md:left-[5%] lg:left-[-15%] top-[25%] float-keyboard drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_10px_15px_rgba(255,255,255,0.1)]"
+          />
+          <img
+            src={mouse}
+            alt="Mouse"
+            className="absolute z-20 pointer-events-none select-none w-[4rem] lg:w-[5rem] h-auto right-[-5%] md:right-[10%] lg:right-[-5%] top-[45%] float-mouse drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_10px_15px_rgba(255,255,255,0.1)]"
+          />
+          <img
+            src={headset}
+            alt="Headset"
+            className="absolute z-20 pointer-events-none select-none w-[5rem] lg:w-[8rem] h-auto right-[-2%] md:right-[12%] lg:right-[2%] top-[0%] float-headset drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)] dark:drop-shadow-[0_10px_15px_rgba(255,255,255,0.1)]"
           />
         </div>
       </div>
