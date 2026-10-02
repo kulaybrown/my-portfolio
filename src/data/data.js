@@ -1,5 +1,15 @@
 import iconAcf from "../assets/images/icon-acf.png";
 
+import p0 from "../assets/images/projects/p0.jpg";
+import p1 from "../assets/images/projects/p1.jpg";
+import p3 from "../assets/images/projects/p3.jpg";
+import p6 from "../assets/images/projects/p6.jpg";
+import p8 from "../assets/images/projects/p8.jpg";
+import p9 from "../assets/images/projects/p9.jpg";
+import p10 from "../assets/images/projects/p10.jpg";
+import p12 from "../assets/images/projects/p12.jpg";
+import px from "../assets/images/projects/px.jpg";
+
 export const projects = [
   {
     id: 0,
@@ -8,6 +18,7 @@ export const projects = [
       "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
     tech: ["React", "Vite", "Tailwind CSS"],
     url: "https://iamthelosworld.com/",
+    img: p0,
   },
   {
     id: 1,
@@ -16,6 +27,7 @@ export const projects = [
       "High-end real estate and lodging website with detailed property views and premium imagery.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     url: "https://aspenstreetlodge.com/",
+    img: p1,
   },
   {
     id: 2,
@@ -23,7 +35,8 @@ export const projects = [
     description:
       "Luxury real estate platform with condominiums and premium rentals, featuring galleries and virtual tours.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
-    url: ""
+    url: "",
+    img: px,
     // url: "http://18.188.183.102/",
   },
   {
@@ -33,6 +46,7 @@ export const projects = [
       "Sophisticated brand website focused on product details and high-quality visual brand experiences.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     url: "https://www.dusse.com/",
+    img: p3,
   },
   {
     id: 4,
@@ -41,6 +55,7 @@ export const projects = [
       "Comprehensive hospitality and real estate site for hotels and residential resort listings.",
     tech: ["Drupal", "Drupal E-Commerce"],
     url: "https://www.gurneysresorts.com/",
+    img: px,
   },
   {
     id: 5,
@@ -48,6 +63,7 @@ export const projects = [
     description:
       "Specialized real estate site featuring residential hotels and resorts with full specs and imagery.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
+    img: px,
   },
   {
     id: 6,
@@ -56,6 +72,7 @@ export const projects = [
       "Main conference platform showcasing global events, speaker lineups, agendas, and ticket information.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/",
+    img: p6,
   },
   {
     id: 7,
@@ -64,6 +81,7 @@ export const projects = [
       "Regional event experience for Europe with localized schedules, venue details, and registration flow.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/europe",
+    img: px,
   },
   {
     id: 8,
@@ -72,6 +90,7 @@ export const projects = [
       "Dedicated conference landing site for Dubai featuring event highlights, partners, and attendee resources.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/dubai",
+    img: p8,
   },
   {
     id: 9,
@@ -80,6 +99,7 @@ export const projects = [
       "Asia-focused conference website with destination details, program information, and conversion-driven pages.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/asia",
+    img: p9,
   },
   {
     id: 10,
@@ -88,6 +108,7 @@ export const projects = [
       "Americas edition event site highlighting speakers, sessions, and streamlined attendee sign-up journeys.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/americas",
+    img: p10,
   },
   {
     id: 11,
@@ -96,6 +117,7 @@ export const projects = [
       "Global meetup events connecting affiliate marketers, industry leaders, and networking opportunities.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "https://affiliateworldmeetups.com/",
+    img: px,
   },
   {
     id: 12,
@@ -104,6 +126,7 @@ export const projects = [
       "Premier advertising and marketing event connecting industry leaders and professionals.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "https://adworldprime.com/",
+    img: p12,
   },
   {
     id: 13,
@@ -111,6 +134,7 @@ export const projects = [
     description: "Marketing website dedicated to the CreatorConf event.",
     tech: ["ReactJS", "React Boilerplate"],
     url: "https://creatorconf.com/",
+    img: px,
   },
   {
     id: 14,
@@ -118,6 +142,7 @@ export const projects = [
     description:
       "Affiliate event listing site with curated schedules and details for company-related gatherings.",
     tech: ["ReactJS", "React Boilerplate"],
+    img: px,
   },
 ];
 

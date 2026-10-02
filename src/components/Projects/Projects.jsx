@@ -2,15 +2,16 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { projects } from "../../data/data";
 
 export default function Projects() {
+  const items = 2;
   const trackRef = useRef(null);
   const [current, setCurrent] = useState(0);
-  const [perView, setPerView] = useState(3);
+  const [perView, setPerView] = useState(items);
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
     const calc = () => {
       const w = window.innerWidth;
-      setPerView(w < 1024 ? 1 : 3);
+      setPerView(w < 1024 ? 1 : items);
     };
     calc();
     window.addEventListener("resize", calc, { passive: true });
@@ -84,8 +85,9 @@ export default function Projects() {
             style={{ transform: `translateX(-${offset}px)` }}
           >
             {projects.map((project) => (
-              <article key={project.id} className="min-w-0 shrink-0 grow-0 basis-full lg:basis-[calc(33.333%_-_1rem)]">
+              <article key={project.id} className="min-w-0 shrink-0 grow-0 basis-full lg:basis-[calc(100%_/_var(--items)_-_1rem)]" style={{ '--items': items }}>
                 <div className="flex h-full flex-col gap-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-6 transform-gpu transform will-change-transform hover:-translate-y-[5px] transition-all duration-300 hover:border-[var(--accent)] hover:shadow-[var(--shadow-lg)]">
+                  <img src={project.img} alt={project.name} className="mb-4 w-full rounded-[var(--radius)] object-cover" />
                   <div className="flex flex-wrap gap-1.5">
                     {project.tech.map((t) => (
                       <span key={t} className="rounded-full bg-[var(--accent-light)] px-2 py-0.5 text-[0.7rem] font-bold tracking-[0.02em] text-[var(--accent)]">

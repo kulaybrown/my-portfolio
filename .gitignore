@@ -17,6 +17,7 @@ pnpm-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+dist/
 
 # Local project notes / source content files
 foliolist
