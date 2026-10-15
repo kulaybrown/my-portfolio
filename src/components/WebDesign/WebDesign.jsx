@@ -6,21 +6,27 @@ import d3 from "../../assets/images/design/d3.webp";
 const designs = [
   {
     id: 1,
-    title: "Luxury Real Estate Landing Page",
-    description: "Sleek, image-focused real estate storefront concept featuring minimalist UI, high contrast layouts, and fluid responsive grid modules.",
-    image: d1,
-  },
-  {
-    id: 2,
     title: "Modern Property Portfolio",
     description: "An elegant lodging design layout emphasizing high-end listing specs, interactive map filters, and immersive branding typography.",
     image: d2,
+    link: "https://loss-stellar-site.webflow.io/",
+    builtWith: ["Webflow"],
+  },
+  {
+    id: 2,
+    title: "Luxury Real Estate Landing Page",
+    description: "Sleek, image-focused real estate storefront concept featuring minimalist UI, high contrast layouts, and fluid responsive grid modules.",
+    image: d1,
+    link: null,
+    builtWith: null
   },
   {
     id: 3,
     title: "Minimalist Golf Game Concept",
     description: "Clean retro-inspired user interface design showcasing gameplay mechanics, level selections, and game stats inside.",
     image: d3,
+    link: null,
+    builtWith: null
   },
 ];
 
@@ -67,6 +73,16 @@ export default function WebDesign() {
                 <p className="text-sm leading-[1.65] text-[var(--text2)]">
                   {item.description}
                 </p>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 text-sm font-semibold text-[var(--accent)] hover:underline"
+                  >
+                    View Project - {item.builtWith ? item.builtWith.join(", ") : "N/A"}
+                  </a>
+                )}
               </div>
             </article>
           ))}

@@ -8,17 +8,18 @@ import p8 from "../assets/images/projects/p8.jpg";
 import p9 from "../assets/images/projects/p9.jpg";
 import p10 from "../assets/images/projects/p10.jpg";
 import p12 from "../assets/images/projects/p12.jpg";
+import p13 from "../assets/images/projects/p13.jpg";
 import px from "../assets/images/projects/px.jpg";
 
 export const projects = [
   {
     id: 0,
-    name: "IAMTHELOSWORLD",
+    name: "WEBFLOW",
     description:
-      "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
-    tech: ["React", "Vite", "Tailwind CSS"],
-    url: "https://iamthelosworld.com/",
-    img: p0,
+      "From full-fledged web design to interactive user experiences, this project showcases the capabilities of Webflow.",
+    tech: ["Webflow"],
+    url: "https://loss-stellar-site.webflow.io/",
+    img: p13,
   },
   {
     id: 1,
@@ -144,6 +145,15 @@ export const projects = [
     tech: ["ReactJS", "React Boilerplate"],
     img: px,
   },
+  {
+    id: 15,
+    name: "IAMTHELOSWORLD",
+    description:
+      "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    url: "https://iamthelosworld.com/",
+    img: p0,
+  },
 ];
 
 export const skills = [
@@ -172,6 +182,7 @@ export const skills = [
   { name: "Gemini", slug: "googlegemini", color: "#8E75B2" },
   { name: "ChatGPT", slug: "openai", color: "#412991" },
   { name: "REST API", slug: "postman", color: "#FF6C37" },
+  { name: "Webflow", slug: "webflow", color: "#156aed" },
 ];
 
 export const experience = [
