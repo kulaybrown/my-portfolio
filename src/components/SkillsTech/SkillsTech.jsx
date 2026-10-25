@@ -58,7 +58,7 @@ export default function SkillsTech() {
         <p className="mb-10 max-w-[52ch] leading-[1.7] text-[var(--text2)]">
           Tools and technologies I work with to build and ship great products.
         </p>
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-4">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-4">
           {skills.map((skill) => (
             <div key={skill.slug} className="flex cursor-default flex-col items-center gap-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-4 pb-4 pt-6 text-center transform-gpu transform will-change-transform hover:-translate-y-[5px] transition-all duration-300 ease-out hover:-translate-y-[5px] hover:border-[var(--accent)] hover:shadow-[var(--shadow)]">
               <SkillIcon skill={skill} />

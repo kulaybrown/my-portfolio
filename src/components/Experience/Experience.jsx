@@ -11,7 +11,7 @@ export default function Experience() {
         </p>
         <div className="relative pl-6 before:absolute before:bottom-[0.45rem] before:left-0 before:top-[0.45rem] before:w-0.5 before:rounded before:bg-[var(--line)] before:content-['']">
           {experience.map((job) => (
-            <article key={job.id} className="relative pb-8 pl-7 last:pb-0">
+            <article key={job.id} className="relative pb-8 pl-0 md:pl-7 last:pb-0">
               <div className="absolute left-[-1.68rem] top-[0.3rem] h-2.5 w-2.5 rounded-full border-[2.5px] border-[var(--bg)] bg-[var(--accent)] shadow-[0_0_0_2px_var(--accent)]" aria-hidden="true" />
               <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-6 py-5 transition hover:border-[var(--accent)] hover:shadow-[var(--shadow)]">
                 <div className="mb-3 flex flex-wrap items-start justify-between gap-4">

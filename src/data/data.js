@@ -193,10 +193,9 @@ export const experience = [
     location: "Makati, Philippines",
     period: "Aug 2022 – Apr 2026",
     details: [
-      "Translated complex Figma designs into responsive, cross-browser compatible user interfaces using React.js, HTML5, and CSS3 / Tailwind CSS.",
-      "Maintained and optimized core web applications, improving client-side page load speeds, overall site performance, and mobile responsiveness.",
-      "Leveraged AI engineering tools (GitHub Copilot, Gemini) to accelerate front-end code generation and debug complex interface logic."
-    ]  
+      "Translated complex Figma designs into high-performance, responsive, and WCAG-accessible web interfaces using Next.js and Tailwind CSS, consuming structured content models managed via Strapi.",
+      "Optimized client-side application performance, page load speeds, and mobile responsiveness across core frontend systems.",
+      "Integrated modern AI workflows (GitHub Copilot, Gemini) into daily engineering practices to accelerate feature delivery and resolve complex codebase logic."    ]  
   },
   {
     id: 2,
@@ -205,9 +204,10 @@ export const experience = [
     location: "US (Remote)",
     period: "Aug 2023 – Nov 2025",
     details: [
-      "Engineered high-converting landing pages and direct-response marketing funnels integrated into a custom PHP framework and WordPress ecosystem.",
-      "Collaborated with marketing teams to implement UI/UX best practices that directly optimized conversion rates and user retention.",
-      "Managed end-to-end deployment of promotional web assets, ensuring high performance, fast rendering, and reliable backend integration."
+      "Managed daily content publishing and end-to-end web updates across platforms, conducting rigorous quality assurance checks on pages, components, and form configurations to ensure accuracy, visual consistency, and UX standards.",
+      "Conducted regular SEO audits and tracked site performance via Google Analytics, monitoring keyword performance, metadata, and link health to optimize copy and landing pages for search engine marketing.",
+      "Collaborated with marketing teams to design and execute high-converting landing pages and HTML newsletters within WordPress, applying UI/UX principles, accessibility standards, and conversion rate optimization (CRO) strategies.",
+      "Performed cross-browser testing and quality assurance on promotional assets and web forms, ensuring multi-device responsiveness, rapid load times, and reliable tracking integrations."
     ]
   },
   {
@@ -217,8 +217,8 @@ export const experience = [
     location: "US (Remote)",
     period: "Feb 2021 – Aug 2023",
     details: [
-      "Designed and developed direct-response sales funnels and performance-optimized landing pages for CBSplit.",
-      "Implemented custom front-end styling and responsive layouts ensuring seamless functionality across mobile and desktop devices."
+      "Designed and built performance-optimized sales funnels and direct-response landing pages for CBSplit using custom CSS3 and responsive frontend workflows.",
+      "Guaranteed full mobile and desktop cross-device compatibility, delivering high rendering speed across all major browsers."
     ],
   },
   {
@@ -228,8 +228,8 @@ export const experience = [
     location: "Makati, Philippines",
     period: "Jan 2020 – Dec 2020",
     details: [
-      "Developed responsive user interfaces and custom themes using WordPress, Drupal, React.js, HTML, and CSS.",
-      "Maintained web assets, conducted code audits, and resolved cross-browser compatibility issues across multiple client sites."
+      "Built custom themes, responsive interfaces, and modular components using WordPress, Drupal, React.js, HTML, and CSS.",
+      "Conducted comprehensive code audits, cross-browser compatibility testing, and routine maintenance across client web properties."
     ]
   },
   {
@@ -239,9 +239,9 @@ export const experience = [
     location: "Makati, Philippines",
     period: "Sep 2017 – Sep 2019",
     details: [
-      "Developed modular, reusable UI components in React.js to streamline development workflows and ensure front-end design consistency.",
-      "Integrated ActiveCampaign REST APIs and automation hooks for streamlined lead generation and automated user tracking.",
-      "Optimized client-side application performance, resulting in measurable improvements to page loading speeds and scalability."
+      "Developed reusable React.js UI components to standardize design patterns and streamline development workflows across frontend projects.",
+      "Integrated ActiveCampaign REST APIs and automated tracking hooks for lead generation systems.",
+      "Optimized client-side application rendering, achieving measurable improvements in load speeds and scalability."
     ]
 
   },

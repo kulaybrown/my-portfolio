@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import SkillsTech from "./components/SkillsTech";
 import About from "./components/About";
@@ -69,19 +70,7 @@ export default function App() {
         <GameDev />
         <Experience />
       </main>
-      <footer className="mt-4 border-t border-[var(--line)] py-6">
-        <div className="mx-auto flex w-[min(1100px,calc(100vw-3rem))] flex-wrap items-center justify-between gap-2 text-sm text-[var(--text2)]">
-          <span>&copy; {new Date().getFullYear()} Angelo H. Lagumbay</span>
-          <a
-            href="https://github.com/kulaybrown"
-            target="_blank"
-            rel="noreferrer"
-            className="transition-colors hover:text-[var(--accent)]"
-          >
-            github.com/kulaybrown
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </Theme>
   );
 }

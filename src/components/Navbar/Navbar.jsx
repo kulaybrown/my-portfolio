@@ -88,13 +88,14 @@ export default function Navbar({ theme, onToggleTheme }) {
       ref={navRef}
     >
       <div className="mx-auto flex h-full w-[min(1100px,calc(100vw-3rem))] items-center justify-between">
-        <a
-          className="shrink-0 text-base font-bold tracking-[-0.01em] text-[var(--text)] no-underline transition-colors hover:text-[var(--accent)]"
-          href="#hero"
-          onClick={handleNavClick}
-        >
-          Angelo H. Lagumbay
-        </a>
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-pink-500 to-purple-600 flex items-center justify-center font-mono font-bold text-white text-lg shadow-lg shadow-cyan-500/20">
+            AL
+          </div>
+          <div>
+            <span className="font-semibold text-black text-[var(--text)] [html[data-theme='dark']_&]:text-white tracking-tight block leading-none">Angelo "Lo" Lagumbay</span>
+          </div>
+        </div>
 
         <div
           className={`fixed left-0 right-0 top-[var(--nav-h)] flex flex-col items-stretch gap-1 bg-[var(--surface)] px-6 pb-6 pt-4 shadow-[var(--shadow-lg)] transition-[transform,opacity] duration-300 md:static md:top-auto md:flex-row md:items-center md:gap-1 md:bg-transparent md:px-0 md:py-0 md:shadow-none md:transition-none ${
