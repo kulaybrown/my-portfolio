@@ -4,7 +4,7 @@ import {
 export default function Footer() {
   return (
     <footer className="mt-4 border-t border-[var(--line)] py-6">
-      <div className="mx-auto flex w-[min(1100px,calc(100vw-3rem))] flex-wrap items-center justify-between gap-2 text-sm text-[var(--text2)]">
+      <div className="mx-auto flex w-[min(1400px,calc(100vw-3rem))] flex-wrap items-center justify-between gap-2 text-sm text-[var(--text2)]">
 
           <span>&copy; {new Date().getFullYear()} Angelo Lagumbay</span>
         

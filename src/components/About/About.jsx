@@ -6,7 +6,7 @@ import aboutImg from "../../assets/images/pixel-me-computer.jpg";
 export default function About() {
   return (
     <section id="about" className="py-14 md:py-20">
-      <div className="mx-auto grid w-[min(1100px,calc(100vw-3rem))] grid-cols-1 items-center gap-10 md:gap-16 lg:grid-cols-[1fr_1.25fr]">
+      <div className="mx-auto grid w-[min(1400px,calc(100vw-3rem))] grid-cols-1 items-center gap-10 md:gap-16 lg:grid-cols-[1fr_1.25fr]">
         <div className="relative">
           <img
             src={aboutImg}

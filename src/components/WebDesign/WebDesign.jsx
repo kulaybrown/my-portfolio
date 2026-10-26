@@ -35,7 +35,7 @@ export default function WebDesign() {
 
   return (
     <section id="webdesign" className="py-14 md:py-20 transition-colors duration-300">
-      <div className="mx-auto w-[min(1100px,calc(100vw-3rem))]">
+      <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         <div className="mb-10 text-center md:text-left">
           <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">
             UI &amp; UX DESIGN

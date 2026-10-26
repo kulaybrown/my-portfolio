@@ -104,7 +104,7 @@ export default function Hero() {
       {/* Decorative Subtle Grid & Gradient Overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(59,130,246,0.08),transparent)] pointer-events-none" />
       
-      <div className="mx-auto w-[min(1100px,calc(100vw-3rem))] grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
+      <div className="mx-auto w-[min(1400px,calc(100vw-3rem))] grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
         
         {/* Left Column: Headline, Bio, Badges & CTAs */}
         <div className="lg:col-span-7 space-y-8">

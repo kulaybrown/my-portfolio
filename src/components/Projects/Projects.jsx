@@ -42,7 +42,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="bg-[var(--surface2)] py-14 md:py-20">
-      <div className="mx-auto w-[min(1100px,calc(100vw-3rem))]">
+      <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Work</p>

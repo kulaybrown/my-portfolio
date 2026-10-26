@@ -3,7 +3,7 @@ import { experience } from "../../data/data";
 export default function Experience() {
   return (
     <section id="experience" className="py-14 md:py-20">
-      <div className="mx-auto w-[min(900px,calc(100vw-3rem))]">
+      <div className="mx-auto w-[min(1000px,calc(100vw-3rem))]">
         <p className="mb-2 block text-center text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Career</p>
         <h2 className="mb-3 text-center text-[clamp(1.7rem,2.8vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em]">Work Experience</h2>
         <p className="mx-auto mb-10 max-w-none text-center leading-[1.7] text-[var(--text2)]">

@@ -52,7 +52,7 @@ function SkillIcon({ skill }) {
 export default function SkillsTech() {
   return (
     <section id="skills" className="bg-[var(--surface2)] py-14 md:py-20">
-      <div className="mx-auto w-[min(1100px,calc(100vw-3rem))]">
+      <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Expertise</p>
         <h2 className="mb-3 text-[clamp(1.7rem,2.8vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em]">Skills &amp; Technologies</h2>
         <p className="mb-10 max-w-[52ch] leading-[1.7] text-[var(--text2)]">

@@ -191,7 +191,7 @@ export const experience = [
     role: "Web Developer / Front End",
     company: "iStack Conferences",
     location: "Makati, Philippines",
-    period: "Aug 2022 – Apr 2026",
+    period: "Aug 2022 - Apr 2026",
     details: [
       "Translated complex Figma designs into high-performance, responsive, and WCAG-accessible web interfaces using Next.js and Tailwind CSS, consuming structured content models managed via Strapi.",
       "Optimized client-side application performance, page load speeds, and mobile responsiveness across core frontend systems.",
@@ -202,7 +202,7 @@ export const experience = [
     role: "Web Designer / Web Developer",
     company: "MyGolfingStore",
     location: "US (Remote)",
-    period: "Aug 2023 – Nov 2025",
+    period: "Aug 2023 - Nov 2025",
     details: [
       "Managed daily content publishing and end-to-end web updates across platforms, conducting rigorous quality assurance checks on pages, components, and form configurations to ensure accuracy, visual consistency, and UX standards.",
       "Conducted regular SEO audits and tracked site performance via Google Analytics, monitoring keyword performance, metadata, and link health to optimize copy and landing pages for search engine marketing.",
@@ -213,9 +213,9 @@ export const experience = [
   {
     id: 3,
     role: "Web Designer / Web Developer",
-    company: "IAmMarketing",
+    company: "IAmMarketing Solutions",
     location: "US (Remote)",
-    period: "Feb 2021 – Aug 2023",
+    period: "Feb 2021 - Aug 2023",
     details: [
       "Designed and built performance-optimized sales funnels and direct-response landing pages for CBSplit using custom CSS3 and responsive frontend workflows.",
       "Guaranteed full mobile and desktop cross-device compatibility, delivering high rendering speed across all major browsers."
@@ -226,7 +226,7 @@ export const experience = [
     role: "Fullstack Web Developer",
     company: "PenBrothers",
     location: "Makati, Philippines",
-    period: "Jan 2020 – Dec 2020",
+    period: "Jan 2020 - Dec 2020",
     details: [
       "Built custom themes, responsive interfaces, and modular components using WordPress, Drupal, React.js, HTML, and CSS.",
       "Conducted comprehensive code audits, cross-browser compatibility testing, and routine maintenance across client web properties."
@@ -237,7 +237,7 @@ export const experience = [
     role: "Web Developer / Front End",
     company: "iStack Conferences",
     location: "Makati, Philippines",
-    period: "Sep 2017 – Sep 2019",
+    period: "Sep 2017 - Sep 2019",
     details: [
       "Developed reusable React.js UI components to standardize design patterns and streamline development workflows across frontend projects.",
       "Integrated ActiveCampaign REST APIs and automated tracking hooks for lead generation systems.",
@@ -250,7 +250,7 @@ export const experience = [
     role: "Application Developer",
     company: "IBM",
     location: "Quezon City, Philippines",
-    period: "Nov 2016 – Mar 2017",
+    period: "Nov 2016 - Mar 2017",
     details: [
       "Converted wireframes into semantic, cross-browser compatible code using JavaScript, HTML, and CSS.",
     ]
@@ -260,7 +260,7 @@ export const experience = [
     role: "Web Developer / Front End",
     company: "ABSS",
     location: "Makati, Philippines",
-    period: "Nov 2013 – Sep 2016",
+    period: "Nov 2013 - Sep 2016",
     details: [
       "Developed custom, lightweight themes and templates for WordPress and Laravel using CSS3, JavaScript, and jQuery.",
       "Migrated legacy web assets into modern cross-platform fluid grids and responsive layouts.",
@@ -272,7 +272,7 @@ export const experience = [
     role: "Web Developer / Designer",
     company: "XVA Media",
     location: "Quezon City, Philippines",
-    period: "May 2013 – Nov 2013",
+    period: "May 2013 - Nov 2013",
     details: [
       "Designed website mockups and successfully translated them into functional, production-ready front-end templates."
     ]
@@ -282,7 +282,7 @@ export const experience = [
     role: "Graphic Designer",
     company: "Affinity Express",
     location: "Quezon City, Philippines",
-    period: "Sep 2010 – Dec 2011",
+    period: "Sep 2010 - Dec 2011",
     details: [
       "Designed print advertisements, brochures, and layouts for newspapers and magazines under tight deadlines."
     ]

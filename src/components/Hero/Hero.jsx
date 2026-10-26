@@ -10,7 +10,7 @@ export default function Hero() {
       className="relative overflow-hidden px-0 pb-0 pt-[calc(var(--nav-h)+3rem)] md:pt-[calc(var(--nav-h)+5rem)]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(125deg,#1e1b4b_0%,#1e3a8a_30%,#1e40af_50%,#7e22ce_75%,#be185d_100%)] opacity-20 [html[data-theme='dark']_&]:opacity-30" />
-      <div className="relative z-10 mx-auto grid w-[min(1100px,calc(100vw-3rem))] grid-cols-1 items-center lg:grid-cols-[4fr_3fr] gap-4 md:gap-4 lg:gap-0 pb-10 md:pb-10 lg:pb-0">
+      <div className="relative z-10 mx-auto grid w-[min(1400px,calc(100vw-3rem))] grid-cols-1 items-center lg:grid-cols-[4fr_3fr] gap-4 md:gap-4 lg:gap-0 pb-10 md:pb-10 lg:pb-0">
         <div>
           <p className="mb-3 inline-block text-xs font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Frontend Developer</p>
           <h1 className="mb-6 text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.12] tracking-[-0.035em]">

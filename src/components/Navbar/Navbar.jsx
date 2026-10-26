@@ -87,7 +87,7 @@ export default function Navbar({ theme, onToggleTheme }) {
       }`}
       ref={navRef}
     >
-      <div className="mx-auto flex h-full w-[min(1100px,calc(100vw-3rem))] items-center justify-between">
+      <div className="mx-auto flex h-full w-[min(1400px,calc(100vw-3rem))] items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-pink-500 to-purple-600 flex items-center justify-center font-mono font-bold text-white text-lg shadow-lg shadow-cyan-500/20">
             AL
