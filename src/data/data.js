@@ -188,8 +188,8 @@ export const skills = [
 export const experience = [
   {
     id: 1,
-    role: "Web Developer / Front End",
-    company: "iStack Conferences",
+    role: "Frontend Developer",
+    company: "iStack Holdings",
     location: "Makati, Philippines",
     period: "Aug 2022 - Apr 2026",
     details: [
@@ -234,8 +234,8 @@ export const experience = [
   },
   {
     id: 5,
-    role: "Web Developer / Front End",
-    company: "iStack Conferences",
+    role: "Frontend Developer",
+    company: "iStack Holdings",
     location: "Makati, Philippines",
     period: "Sep 2017 - Sep 2019",
     details: [
@@ -258,7 +258,7 @@ export const experience = [
   {
     id: 7,
     role: "Web Developer / Front End",
-    company: "ABSS",
+    company: "ABSS Interactive GmbH",
     location: "Makati, Philippines",
     period: "Nov 2013 - Sep 2016",
     details: [
@@ -280,7 +280,7 @@ export const experience = [
   {
     id: 9,
     role: "Graphic Designer",
-    company: "Affinity Express",
+    company: "AffinityX",
     location: "Quezon City, Philippines",
     period: "Sep 2010 - Dec 2011",
     details: [
