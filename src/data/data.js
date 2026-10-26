@@ -3,10 +3,13 @@ import iconAcf from "../assets/images/icon-acf.png";
 import p0 from "../assets/images/projects/p0.jpg";
 import p1 from "../assets/images/projects/p1.jpg";
 import p3 from "../assets/images/projects/p3.jpg";
+import p5 from "../assets/images/projects/p5.jpg";
 import p6 from "../assets/images/projects/p6.jpg";
+import p7 from "../assets/images/projects/p7.jpg";
 import p8 from "../assets/images/projects/p8.jpg";
 import p9 from "../assets/images/projects/p9.jpg";
 import p10 from "../assets/images/projects/p10.jpg";
+import p11 from "../assets/images/projects/p11.jpg";
 import p12 from "../assets/images/projects/p12.jpg";
 import p13 from "../assets/images/projects/p13.jpg";
 import px from "../assets/images/projects/px.jpg";
@@ -64,7 +67,7 @@ export const projects = [
     description:
       "Specialized real estate site featuring residential hotels and resorts with full specs and imagery.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
-    img: px,
+    img: p5,
   },
   {
     id: 6,
@@ -82,7 +85,7 @@ export const projects = [
       "Regional event experience for Europe with localized schedules, venue details, and registration flow.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/europe",
-    img: px,
+    img: p7,
   },
   {
     id: 8,
@@ -118,7 +121,7 @@ export const projects = [
       "Global meetup events connecting affiliate marketers, industry leaders, and networking opportunities.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "https://affiliateworldmeetups.com/",
-    img: px,
+    img: p11,
   },
   {
     id: 12,

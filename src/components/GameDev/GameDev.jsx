@@ -27,7 +27,7 @@ const gameProjects = [
 
 export default function GameDev() {
   return (
-    <section id="gamedev" className="bg-[var(--surface2)] pb-14 md:pb-20 transition-colors duration-300">
+    <section id="gamedev" className="bg-[var(--surface2)] pb-14 md:pb-20 transition-colors duration-300 -mt-2.5 z-10 relative">
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         
         {/* Subtle separator line to bridge Projects and GameDev within the same surface background */}
