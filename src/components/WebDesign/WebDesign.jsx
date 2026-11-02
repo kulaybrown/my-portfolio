@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Text } from "@radix-ui/themes";
 import d1 from "../../assets/images/design/d1.webp";
 import d2 from "../../assets/images/design/d2.webp";
 import d3 from "../../assets/images/design/d3.webp";
@@ -73,15 +74,15 @@ export default function WebDesign() {
   };
 
   return (
-    <section id="webdesign" className="pt-14 md:pt-20 pb-0 transition-colors duration-300 overflow-visible">
+    <section id="webdesign" className="bg-[var(--surface2)] pt-14 md:pt-20 pb-0 transition-colors duration-300 overflow-visible">
       {/* Header Container (Constrained width) */}
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))] mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
-          <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">
-            UI &amp; UX DESIGN
-          </p>
-          <h2 className="text-[clamp(1.7rem,2.8vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em]">
-            WEB DESIGN
+          <Text as="p" size="2" weight="bold" className="text-blue-600 uppercase tracking-wider mb-2">
+             UI &amp; UX DESIGN
+          </Text>
+          <h2 className="text-[length:var(--font-size-8)] font-bold tracking-tight">
+            Web Design
           </h2>
         </div>
 
@@ -91,13 +92,13 @@ export default function WebDesign() {
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
             aria-label="Previous items"
-            className={`flex h-10 w-10 items-center justify-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--text1)] transition ${
+            className={`group flex h-10 w-10 items-center justify-center rounded-full border light:border-slate-800 bg-white text-black-600 transition enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white ${
               !canScrollLeft
                 ? "opacity-40 cursor-not-allowed"
-                : "hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                : ""
             }`}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
@@ -105,13 +106,13 @@ export default function WebDesign() {
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
             aria-label="Next items"
-            className={`flex h-10 w-10 items-center justify-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--text1)] transition ${
+            className={`group flex h-10 w-10 items-center justify-center rounded-full border light:border-slate-800 bg-white text-black-600 transition enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white ${
               !canScrollRight
                 ? "opacity-40 cursor-not-allowed"
-                : "hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                : ""
             }`}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
@@ -139,7 +140,7 @@ export default function WebDesign() {
               <p className="text-sm leading-[1.65] text-[var(--text2)] mb-2">
                 {item.description}
               </p>
-              {item.link && (
+              {/* {item.link && (
                 <a
                   href={item.link}
                   target="_blank"
@@ -149,7 +150,7 @@ export default function WebDesign() {
                 >
                   View Project - {item.builtWith ? item.builtWith.join(", ") : "N/A"} ↗
                 </a>
-              )}
+              )} */}
             </div>
 
             {/* Bottom Image Frame */}

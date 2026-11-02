@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import WebDesign from "./components/WebDesign";
 // import GameDev from "./components/GameDev";
 import Experience from "./components/Experience";
+import PersonalProjects from "./components/PersonalProjects";
 import useHashScrollOnLoad from "./hooks/useHashScrollOnLoad";
 import { Theme, Spinner } from "@radix-ui/themes";
 import "./index.css";
@@ -66,6 +67,7 @@ export default function App() {
         <SkillsTech />
         <About />
         <Projects />
+        <PersonalProjects />
         <WebDesign />
         {/* <GameDev /> */}
         <Experience />

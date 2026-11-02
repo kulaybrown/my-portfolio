@@ -11,19 +11,14 @@ import p9 from "../assets/images/projects/p9.jpg";
 import p10 from "../assets/images/projects/p10.jpg";
 import p11 from "../assets/images/projects/p11.jpg";
 import p12 from "../assets/images/projects/p12.jpg";
-import p13 from "../assets/images/projects/p13.jpg";
+// import p13 from "../assets/images/projects/p13.jpg";
 import px from "../assets/images/projects/px.jpg";
 
+import peak from "../assets/images/personal/peak-thumbnail.jpg";
+import losworld from "../assets/images/personal/losworld-thumbnail.jpg";
+import valerian from "../assets/images/personal/valerian-thumbnail.jpg";
+
 export const projects = [
-  {
-    id: 0,
-    name: "WEBFLOW",
-    description:
-      "From full-fledged web design to interactive user experiences, this project showcases the capabilities of Webflow.",
-    tech: ["Webflow"],
-    url: "https://loss-stellar-site.webflow.io/",
-    img: p13,
-  },
   {
     id: 1,
     name: "Aspen Street Lodge",
@@ -148,15 +143,31 @@ export const projects = [
     tech: ["ReactJS", "React Boilerplate"],
     img: px,
   },
+];
+
+export const personalProjects = [
   {
-    id: 15,
-    name: "IAMTHELOSWORLD",
-    description:
-      "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
-    tech: ["React", "Vite", "Tailwind CSS"],
-    url: "https://iamthelosworld.com/",
-    img: p0,
+    title: "Custom Shopify Liquid Theme",
+    description: "A fully custom e-commerce storefront built from scratch using Shopify Liquid, Tailwind CSS, and vanilla JavaScript with dynamic sections and cart drawers.",
+    tags: ["E-Commerce", "Shopify Liquid", "Tailwind CSS", "JavaScript", "REST API"],
+    liveUrl: "https://los-storex.myshopify.com/",
+    image: peak
   },
+  {
+    title: "Webflow development demo",
+    description: "This website showcases my work and experiments with Webflow, highlighting interactive designs and web development capabilities.",
+    tags: ["Webflow"],
+    liveUrl: "https://loss-stellar-site.webflow.io/",
+    image: valerian
+  },
+  {
+    title: "Personal gaming site",
+    description: "This website is a dedicated showcase of my passion for creating games. It features a collection of my game projects, each with detailed descriptions, screenshots, and links to play or download them.",
+    tags: ["React", "Vite", "Tailwind CSS"],
+    liveUrl: "https://iamthelosworld.com/",
+    image: losworld
+  },
+  
 ];
 
 export const skills = [

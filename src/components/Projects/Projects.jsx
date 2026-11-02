@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { projects } from "../../data/data";
+import { Card, Flex, Text, Badge, Button } from "@radix-ui/themes";
+import { ArrowUpRight } from 'lucide-react';
+import { projects } from "../../data/data.js";
 
 export default function Projects() {
   const items = 2;
@@ -43,41 +45,50 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-[var(--surface2)] py-14 md:py-20">
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
+        
+        {/* Section Header */}
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="mb-2 inline-block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)]">Work</p>
-            <h2 className="mb-3 text-[clamp(1.7rem,2.8vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em]">Project Portfolio</h2>
-            <p className="max-w-[52ch] leading-[1.7] text-[var(--text2)]">
+            <Text as="p" size="2" weight="bold" className="text-blue-600 uppercase tracking-wider mb-2">
+              Work
+            </Text>
+            <h2 className="text-[length:var(--font-size-8)] font-bold tracking-tight">
+              Project Portfolio
+            </h2>
+            <Text as="p" size="3" color="gray" className="mt-2 max-w-[52ch]">
               A selection of sites and apps I&apos;ve built across different industries.
-            </p>
+            </Text>
           </div>
+          
+          {/* Navigation Controls */}
           <div className="flex shrink-0 items-center gap-2">
             <button
               onClick={prev}
               disabled={current === 0}
               aria-label="Previous"
-              className="grid h-10 w-10 place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--text)] will-change-transform transition-all duration-300 disabled:cursor-default disabled:opacity-30 enabled:hover:-translate-y-[5px] enabled:hover:border-[var(--accent)] enabled:hover:bg-[var(--accent)] enabled:hover:text-white enabled:hover:shadow-[var(--shadow)]"
+              className="group grid h-10 w-10 place-items-center rounded-full border light:border-slate-800 bg-white text-black-600 will-change-transform transition-all duration-300 disabled:cursor-default disabled:opacity-30 enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="15 18 9 12 15 6" />
               </svg>
             </button>
-            <span className="min-w-12 text-center text-xs font-semibold text-[var(--text2)]">
+            <Text as="span" size="2" weight="medium" className="min-w-12 text-center text-dark">
               {current + 1}&thinsp;/&thinsp;{maxIndex + 1}
-            </span>
+            </Text>
             <button
               onClick={next}
               disabled={current >= maxIndex}
               aria-label="Next"
-              className="grid h-10 w-10 place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--text)] will-change-transform transition-all duration-300 disabled:cursor-default disabled:opacity-30 enabled:hover:-translate-y-[5px] enabled:hover:border-[var(--accent)] enabled:hover:bg-[var(--accent)] enabled:hover:text-white enabled:hover:shadow-[var(--shadow)]"
+              className="group grid h-10 w-10 place-items-center rounded-full border light:border-slate-800 bg-white text-black-600 will-change-transform transition-all duration-300 disabled:cursor-default disabled:opacity-30 enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="9 18 15 12 9 6" />
               </svg>
             </button>
           </div>
         </div>
 
+        {/* Carousel Track */}
         <div className="overflow-hidden pt-[5px]">
           <div
             ref={trackRef}
@@ -86,41 +97,60 @@ export default function Projects() {
           >
             {projects.map((project) => (
               <article key={project.id} className="min-w-0 shrink-0 grow-0 basis-full lg:basis-[calc(100%_/_var(--items)_-_1rem)]" style={{ '--items': items }}>
-                <div className="flex h-full flex-col gap-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-6 transform-gpu transform will-change-transform hover:-translate-y-[5px] transition-all duration-300 hover:border-[var(--accent)] hover:shadow-[var(--shadow-lg)]">
-                  <img src={project.img} alt={project.name} className="mb-4 w-full rounded-[var(--radius)] object-cover" />
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.tech.map((t) => (
-                      <span key={t} className="rounded-full bg-[var(--accent-light)] px-2 py-0.5 text-[0.7rem] font-bold tracking-[0.02em] text-[var(--accent)]">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="m-0 text-[1.05rem] font-bold">{project.name}</h3>
-                  <p className="m-0 flex-1 text-sm leading-[1.65] text-[var(--text2)]">{project.description}</p>
-                  <div className="mt-auto border-t border-[var(--line)] pt-2">
-                    {project.url ? (
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--accent)] no-underline"
-                      >
-                        Visit project
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <line x1="7" y1="17" x2="17" y2="7" />
-                          <polyline points="7 7 17 7 17 17" />
-                        </svg>
-                      </a>
-                    ) : (
-                      <span className="text-xs italic text-[var(--text2)]">Private project</span>
-                    )}
-                  </div>
-                </div>
+                <Card size="3" className="flex h-full flex-col justify-between overflow-hidden border border-slate-100 light:border-slate-800 transition-all duration-300 hover:shadow-lg">
+                  <Flex className="flex-col h-full" style={{ justifyContent: "space-between" }}>
+                    <div>
+                      {/* End-to-end Image Thumbnail */}
+                      {project.img && (
+                        <div className="-mx-6 -mt-6 mb-4 overflow-hidden aspect-video bg-slate-100 dark:bg-slate-900">
+                          <img
+                            src={project.img}
+                            alt={project.name}
+                            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                          />
+                        </div>
+                      )}
+                      {/* Tech Stack Badges */}
+                      <Flex wrap="wrap" gap="2" className="mb-3">
+                        {project.tech.map((t) => (
+                          <span key={t} className="shrink-0 whitespace-nowrap rounded-md bg-[var(--accent-light)] px-2 py-1 text-xs font-bold text-[var(--accent)]">
+                            {t}
+                          </span>
+                        ))}
+                      </Flex>
+                      <Text as="h3" size="5" weight="bold" className="mb-2">
+                        {project.name}
+                      </Text>
+                      <Text as="p" size="2" color="gray" className="mb-6 leading-relaxed">
+                        {project.description}
+                      </Text>
+                    </div>
+                    {/* Footer Action */}
+                    <div className="pt-3 border-t border-slate-100 light:border-slate-800">
+                      {project.url ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="cursor-pointer inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm shadow-md shadow-blue-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+                        >
+                          Visit Project <ArrowUpRight />
+                        </a>
+                    
+                      ) : (
+                        <Text as="span" size="2" color="gray" className="italic">
+                          Private project
+                        </Text>
+                      )}
+                    </div>
+                  </Flex>
+                </Card>
               </article>
             ))}
           </div>
         </div>
 
+        {/* Carousel Pagination Dots */}
         <div className="mt-7 flex justify-center gap-2" role="tablist" aria-label="Carousel navigation">
           {Array.from({ length: maxIndex + 1 }).map((_, i) => (
             <button
@@ -128,8 +158,8 @@ export default function Projects() {
               role="tab"
               className={`h-2 rounded-full border-0 p-0 transition-all ${
                 i === current
-                  ? "w-[22px] bg-[var(--accent)]"
-                  : "w-2 bg-[var(--line)]"
+                  ? "w-[22px] bg-blue-600"
+                  : "w-2 bg-slate-200 dark:bg-slate-800"
               }`}
               onClick={() => setCurrent(i)}
               aria-label={`Go to slide ${i + 1}`}
@@ -137,6 +167,7 @@ export default function Projects() {
             />
           ))}
         </div>
+
       </div>
     </section>
   );

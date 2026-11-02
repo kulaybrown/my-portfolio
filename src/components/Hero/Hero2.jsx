@@ -169,10 +169,10 @@ export default function Hero() {
 
             <a
               href="mailto:anelolag@gmail.com"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-[var(--line)] bg-[var(--card-bg)] text-[var(--text)] font-medium text-sm hover:border-[var(--accent)] transition-all"
+              className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-[var(--line)] bg-[var(--card-bg)] text-[var(--text)] font-medium text-sm hover:border-[var(--accent)] transition-colors"
             >
-              <Mail className="w-4 h-4 text-blue-500" />
-              <span>Get in Touch</span>
+              <Mail className="w-4 h-4 text-dark group-hover:text-[var(--accent)] transition-colors" />
+              <span className="group-hover:text-[var(--accent)] transition-colors">Get in Touch</span>
             </a>
           </div>
 
