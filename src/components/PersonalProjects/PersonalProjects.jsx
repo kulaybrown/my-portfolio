@@ -4,7 +4,7 @@ import { personalProjects as pers } from "../../data/data.js";
 
 export default function PersonalProjects() {
   return (
-    <section id="personal-projects" className="py-14 md:py-20">
+    <section id="projects" className="py-14 md:py-20">
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         <div className="mb-10">
           <Text as="p" size="2" weight="bold" className="text-blue-600 uppercase tracking-wider mb-2">
@@ -58,6 +58,11 @@ export default function PersonalProjects() {
                     >
                       Visit Project <ArrowUpRight />
                     </a>
+                  )}
+                  {project.password && (
+                    <span className="shrink-0 whitespace-nowrap rounded-md bg-red-100 px-2 py-1 text-xl text-red-600">
+                      Password: <span className="font-bold" style={{"fontFamily": "sans-serif !important"}}>{project.password}</span>
+                    </span>
                   )}
                 </Flex>
               </Flex>

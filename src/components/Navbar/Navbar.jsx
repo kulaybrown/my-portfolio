@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const NAV_LINKS = [
   { label: "About", id: "about" },
   { label: "Skills & Tech", id: "skills" },
+  { label: "Works", id: "works" },
   { label: "Projects", id: "projects" },
   { label: "Web Design", id: "webdesign" },
   { label: "Experience", id: "experience" },
@@ -98,10 +99,10 @@ export default function Navbar({ theme, onToggleTheme }) {
         </div>
 
         <div
-          className={`fixed left-0 right-0 top-[var(--nav-h)] flex flex-col items-stretch gap-1 bg-[var(--surface)] px-6 pb-6 pt-4 shadow-[var(--shadow-lg)] transition-[transform,opacity] duration-300 md:static md:top-auto md:flex-row md:items-center md:gap-1 md:bg-transparent md:px-0 md:py-0 md:shadow-none md:transition-none ${
+          className={`fixed left-0 right-0 top-[var(--nav-h)] flex flex-col items-stretch gap-1 bg-[var(--surface)] px-6 pb-6 pt-4 shadow-[var(--shadow-lg)] transition-[transform,opacity] duration-300 lg:static lg:top-auto lg:flex-row lg:items-center lg:gap-1 lg:bg-transparent lg:px-0 lg:py-0 lg:shadow-none lg:transition-none ${
             menuOpen
               ? "pointer-events-auto translate-y-0 opacity-100"
-              : "pointer-events-none -translate-y-[110%] opacity-0 md:pointer-events-auto md:translate-y-0 md:opacity-100"
+              : "pointer-events-none -translate-y-[110%] opacity-0 lg:pointer-events-auto lg:translate-y-0 lg:opacity-100"
           }`}
           onClick={(e) => e.stopPropagation()}
         >
@@ -109,14 +110,14 @@ export default function Navbar({ theme, onToggleTheme }) {
             <a
               key={link.id}
               href={`#${link.id}`}
-              className="rounded-lg px-2 py-3 text-base font-medium text-[var(--text2)] no-underline transition md:px-3 md:py-2 md:text-sm hover:bg-[var(--accent-light)] hover:text-[var(--accent)]"
+              className="rounded-lg px-2 py-3 text-base font-medium text-[var(--text2)] no-underline transition lg:px-3 lg:py-2 lg:text-sm hover:bg-[var(--accent-light)] hover:text-[var(--accent)]"
               onClick={handleNavClick}
             >
               {link.label}
             </a>
           ))}
           <button
-            className="mt-2 ml-0 inline-flex items-center justify-center gap-1 rounded-full border border-[var(--line)] bg-[var(--surface2)] px-4 py-2 text-sm font-semibold text-[var(--text)] will-change-transform transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_10px_30px_rgba(14,26,32,0.2)] [html[data-theme='dark']_&]:hover:shadow-[0_10px_30px_rgba(0,0,0,0.45)] md:mt-0 md:ml-2 md:justify-start md:px-3 md:py-1.5 md:text-xs [&_svg]:h-4 [&_svg]:w-4 [&_svg]:shrink-0"
+            className="mt-2 ml-0 inline-flex items-center justify-center gap-1 rounded-full border border-[var(--line)] bg-[var(--surface2)] px-4 py-2 text-sm font-semibold text-[var(--text)] will-change-transform transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_10px_30px_rgba(14,26,32,0.2)] [html[data-theme='dark']_&]:hover:shadow-[0_10px_30px_rgba(0,0,0,0.45)] lg:mt-0 lg:ml-2 lg:justify-start lg:px-3 lg:py-1.5 lg:text-xs [&_svg]:h-4 [&_svg]:w-4 [&_svg]:shrink-0"
             onClick={onToggleTheme}
             aria-label="Toggle color theme"
           >
@@ -126,7 +127,7 @@ export default function Navbar({ theme, onToggleTheme }) {
         </div>
 
         <button
-          className="flex h-9 w-9 flex-col items-center justify-center gap-[5px] md:hidden"
+          className="flex h-9 w-9 flex-col items-center justify-center gap-[5px] lg:hidden"
           onClick={(e) => {
             e.stopPropagation();
             setMenuOpen((o) => !o);

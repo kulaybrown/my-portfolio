@@ -17,6 +17,7 @@ import px from "../assets/images/projects/px.jpg";
 import peak from "../assets/images/personal/peak-thumbnail.jpg";
 import losworld from "../assets/images/personal/losworld-thumbnail.jpg";
 import valerian from "../assets/images/personal/valerian-thumbnail.jpg";
+import lumen from "../assets/images/personal/lumen-thumbnail.jpg";
 
 export const projects = [
   {
@@ -152,6 +153,14 @@ export const personalProjects = [
     tags: ["E-Commerce", "Shopify Liquid", "Tailwind CSS", "JavaScript", "REST API"],
     liveUrl: "https://los-storex.myshopify.com/",
     image: peak
+  },
+  {
+    title: "Custom Shopify Liquid Theme",
+    description: "A fully custom e-commerce storefront built from scratch using Shopify Liquid, Tailwind CSS, and vanilla JavaScript with dynamic sections and cart drawers.",
+    tags: ["E-Commerce", "Shopify Liquid", "Tailwind CSS", "JavaScript", "REST API"],
+    liveUrl: "https://test-lumen-twe9j0kt.myshopify.com/",
+    image: lumen,
+    password: "stahle"
   },
   {
     title: "Webflow development demo",

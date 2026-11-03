@@ -43,7 +43,7 @@ export default function Projects() {
   const next = () => setCurrent((c) => Math.min(maxIndex, c + 1));
 
   return (
-    <section id="projects" className="bg-[var(--surface2)] py-14 md:py-20">
+    <section id="works" className="bg-[var(--surface2)] py-14 md:py-20">
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))]">
         
         {/* Section Header */}
