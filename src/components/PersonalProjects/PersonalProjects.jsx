@@ -69,7 +69,7 @@ export default function PersonalProjects() {
                     </a>
                   )}
                   {project.password && (
-                    <span className="shrink-0 whitespace-nowrap rounded-md bg-red-100 dark:bg-red-950/50 px-2 py-1 text-xs text-red-600 dark:text-red-400">
+                    <span className="shrink-0 whitespace-nowrap rounded-md bg-red-100 px-2 py-1 text-md text-red-400">
                       Password: <span className="font-bold font-sans">{project.password}</span>
                     </span>
                   )}
