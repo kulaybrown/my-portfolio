@@ -1,7 +1,7 @@
 import { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import ContentPlaceholder from "./components/ContentPlaceholder";
 import useHashScrollOnLoad from "./hooks/useHashScrollOnLoad";
 import "./index.css";
 
@@ -13,6 +13,7 @@ const PersonalProjects = lazy(() => import("./components/PersonalProjects"));
 const WebDesign = lazy(() => import("./components/WebDesign"));
 // const GameDev = lazy(() => import("./components/GameDev"));
 const Experience = lazy(() => import("./components/Experience"));
+const Footer = lazy(() => import("./components/Footer"));
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -62,7 +63,7 @@ export default function App() {
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <Suspense fallback={<div className="py-20 text-center"><div className="inline-block h-6 w-6 animate-spin rounded-full border-3 border-blue-600 border-t-transparent" /></div>}>
+        <Suspense fallback={<ContentPlaceholder />}>
           <SkillsTech />
           <About />
           <Projects />
@@ -72,7 +73,9 @@ export default function App() {
           <Experience />
         </Suspense>
       </main>
-      <Footer />
+      <Suspense>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
