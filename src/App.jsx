@@ -1,17 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import SkillsTech from "./components/SkillsTech";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import WebDesign from "./components/WebDesign";
-// import GameDev from "./components/GameDev";
-import Experience from "./components/Experience";
-import PersonalProjects from "./components/PersonalProjects";
 import useHashScrollOnLoad from "./hooks/useHashScrollOnLoad";
-import { Theme, Spinner } from "@radix-ui/themes";
 import "./index.css";
+
+// Lazy-load below-the-fold sections to prevent initial bundle pressure and DOM weight
+const SkillsTech = lazy(() => import("./components/SkillsTech"));
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const PersonalProjects = lazy(() => import("./components/PersonalProjects"));
+const WebDesign = lazy(() => import("./components/WebDesign"));
+// const GameDev = lazy(() => import("./components/GameDev"));
+const Experience = lazy(() => import("./components/Experience"));
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -48,31 +49,30 @@ export default function App() {
   const toggleTheme = () =>
     setTheme((t) => (t === "light" ? "dark" : "light"));
 
-  // Fullscreen Loader State
   if (loading) {
     return (
-      <Theme appearance={theme} accentColor="blue" grayColor="slate" radius="large">
-        <div className="flex h-screen w-full items-center justify-center bg-[var(--bg)] text-[var(--text)]">
-          <Spinner size="3" />
-        </div>
-      </Theme>
+      <div className="flex h-screen w-full items-center justify-center bg-[var(--bg)] text-[var(--text)]">
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-blue-600 border-t-transparent" />
+      </div>
     );
   }
 
   return (
-    <Theme appearance={theme} accentColor="blue" grayColor="slate" radius="large">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <SkillsTech />
-        <About />
-        <Projects />
-        <PersonalProjects />
-        <WebDesign />
-        {/* <GameDev /> */}
-        <Experience />
+        <Suspense fallback={<div className="py-20 text-center"><div className="inline-block h-6 w-6 animate-spin rounded-full border-3 border-blue-600 border-t-transparent" /></div>}>
+          <SkillsTech />
+          <About />
+          <Projects />
+          <PersonalProjects />
+          <WebDesign />
+          {/* <GameDev /> */}
+          <Experience />
+        </Suspense>
       </main>
       <Footer />
-    </Theme>
+    </div>
   );
 }

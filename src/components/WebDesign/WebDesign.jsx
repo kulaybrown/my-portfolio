@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { Text } from "@radix-ui/themes";
 import d1 from "../../assets/images/design/d1.webp";
 import d2 from "../../assets/images/design/d2.webp";
 import d3 from "../../assets/images/design/d3.webp";
@@ -50,14 +49,13 @@ export default function WebDesign() {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
       setCanScrollLeft(scrollLeft > 5);
-      // Allow a small threshold (5px) to handle fractional pixel roundings
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 5);
     }
   };
 
   useEffect(() => {
     checkScrollPosition();
-    window.addEventListener("resize", checkScrollPosition);
+    window.addEventListener("resize", checkScrollPosition, { passive: true });
     return () => window.removeEventListener("resize", checkScrollPosition);
   }, []);
 
@@ -68,37 +66,36 @@ export default function WebDesign() {
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
       });
-      // Update states shortly after scroll starts/ends
       setTimeout(checkScrollPosition, 300);
     }
   };
 
   return (
     <section id="webdesign" className="bg-[var(--surface2)] pt-14 md:pt-20 pb-0 transition-colors duration-300 overflow-visible">
-      {/* Header Container (Constrained width) */}
+      {/* Header Container */}
       <div className="mx-auto w-[min(1400px,calc(100vw-3rem))] mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
-          <Text as="p" size="2" weight="bold" className="text-blue-600 uppercase tracking-wider mb-2">
-             UI &amp; UX DESIGN
-          </Text>
-          <h2 className="text-[length:var(--font-size-8)] font-bold tracking-tight">
+          <p className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-2">
+            UI &amp; UX DESIGN
+          </p>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--text)]">
             Web Design
           </h2>
         </div>
 
-        {/* Carousel Arrows with disabled states */}
+        {/* Carousel Arrows */}
         <div className="flex items-center gap-2">
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
             aria-label="Previous items"
-            className={`group flex h-10 w-10 items-center justify-center rounded-full border light:border-slate-800 bg-white text-black-600 transition enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white ${
+            className={`group flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-[var(--text)] transition ${
               !canScrollLeft
                 ? "opacity-40 cursor-not-allowed"
-                : ""
+                : "enabled:hover:-translate-y-1 enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white"
             }`}
           >
-            <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="group-hover:text-white transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
@@ -106,60 +103,52 @@ export default function WebDesign() {
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
             aria-label="Next items"
-            className={`group flex h-10 w-10 items-center justify-center rounded-full border light:border-slate-800 bg-white text-black-600 transition enabled:hover:-translate-y-[5px] enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white ${
+            className={`group flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-[var(--text)] transition ${
               !canScrollRight
                 ? "opacity-40 cursor-not-allowed"
-                : ""
+                : "enabled:hover:-translate-y-1 enabled:hover:border-blue-500 enabled:hover:bg-blue-500 enabled:hover:text-white"
             }`}
           >
-            <svg className="text-black group-hover:text-white group-disabled:text-black group-disabled:opacity-30 transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="group-hover:text-white transition-colors" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
         </div>
       </div>
 
-      {/* Carousel Scroll Container - Non-looping standard list with scroll event listener */}
+      {/* Carousel Scroll Container */}
       <div
         ref={carouselRef}
         onScroll={checkScrollPosition}
-        className="flex pl-4 items-start gap-20 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory px-[max(1.5rem,calc((100vw-1400px)/2))] pb-0 overflow-visible scrollbar-none pt-[0px] md:pt-[80px] ml-6 mr-6 md:ml-1 md:mr-0"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        className="flex pl-4 items-start gap-20 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory px-[max(1.5rem,calc((100vw-1400px)/2))] pb-0 overflow-visible scrollbar-none pt-0 md:pt-20 ml-6 mr-6 md:ml-1 md:mr-0 will-change-scroll"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none", contain: 'paint' }}
       >
-        {designs.map((item) => (
+        {designs.map((item, index) => (
           <article
             key={item.id}
             onClick={() => setActiveImage(item)}
-            className="group flex flex-col justify-end shrink-0 w-[92vw] sm:w-[500px] md:w-[620px] lg:w-[700px] snap-start cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-20 relative z-10"
+            className="group flex flex-col justify-end shrink-0 w-[92vw] sm:w-[500px] md:w-[620px] lg:w-[700px] snap-start cursor-pointer transition-transform duration-300 ease-out hover:-translate-y-10 relative z-10 transform-gpu"
           >
             {/* Top Text Info: Title & Description */}
             <div className="mb-4 flex-1">
-              <h3 className="mb-2 text-xl font-bold transition-colors duration-300 group-hover:text-[var(--accent)]">
+              <h3 className="mb-2 text-xl font-bold transition-colors duration-300 group-hover:text-[var(--accent)] text-[var(--text)]">
                 {item.title}
               </h3>
               <p className="text-sm leading-[1.65] text-[var(--text2)] mb-2">
                 {item.description}
               </p>
-              {/* {item.link && (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-block text-xs font-semibold text-[var(--accent)] hover:underline"
-                >
-                  View Project - {item.builtWith ? item.builtWith.join(", ") : "N/A"} ↗
-                </a>
-              )} */}
             </div>
 
             {/* Bottom Image Frame */}
-            <div className="relative h-[600px] w-full overflow-hidden bg-[var(--surface2)] border-t border-l border-r border-[var(--line)] -mb-16 md:-mb-24 shadow-xl">
+            <div className="relative h-[500px] md:h-[600px] w-full overflow-hidden bg-[var(--surface2)] border-t border-l border-r border-[var(--line)] -mb-16 md:-mb-24 shadow-lg rounded-t-xl">
               <img
                 src={item.image}
                 alt={item.title}
+                loading={index < 2 ? "eager" : "lazy"}
+                decoding="async"
+                width="700"
+                height="600"
                 className="h-full w-full object-cover object-top"
-                loading="lazy"
               />
             </div>
           </article>
@@ -169,7 +158,7 @@ export default function WebDesign() {
       {/* Full Image Modal */}
       {activeImage && (
         <div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 p-4 md:p-8 animate-fade-in backdrop-blur-sm"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 p-4 md:p-8 backdrop-blur-sm"
           onClick={() => setActiveImage(null)}
         >
           <button
@@ -190,6 +179,7 @@ export default function WebDesign() {
             <img
               src={activeImage.image}
               alt={activeImage.title}
+              decoding="async"
               className="w-full h-auto block rounded-lg cursor-zoom-out"
               onClick={() => setActiveImage(null)}
             />
