@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { projects } from "../../data/data.js";
 
 export default function Projects() {
-  const items = 2;
+  const items = 3;
   const trackRef = useRef(null);
   const [current, setCurrent] = useState(0);
   const [perView, setPerView] = useState(items);
@@ -98,7 +98,7 @@ export default function Projects() {
           >
             {projects.map((project, index) => (
               <article 
-                key={project.id} 
+                key={index} 
                 className="min-w-0 shrink-0 grow-0 basis-full lg:basis-[calc(100%_/_var(--items)_-_1rem)] transform-gpu" 
                 style={{ '--items': items }}
               >

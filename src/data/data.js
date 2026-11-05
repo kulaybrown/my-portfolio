@@ -11,7 +11,7 @@ import p9 from "../assets/images/projects/p9.jpg";
 import p10 from "../assets/images/projects/p10.jpg";
 import p11 from "../assets/images/projects/p11.jpg";
 import p12 from "../assets/images/projects/p12.jpg";
-// import p13 from "../assets/images/projects/p13.jpg";
+import p14 from "../assets/images/projects/p14.jpg";
 import px from "../assets/images/projects/px.jpg";
 
 import peak from "../assets/images/personal/peak-thumbnail.jpg";
@@ -21,127 +21,115 @@ import lumen from "../assets/images/personal/lumen-thumbnail.jpg";
 
 export const projects = [
   {
-    id: 1,
+    name: "Affiliate World Conferences",
+    description:
+      "Built the entire frontend interface using React with a meticulous eye for design fidelity, translating Figma layouts into pixel-perfect components.",
+    tech: ["React", "Styled-Components", "Strapi"],
+    url: "http://affiliateworldconferences.com/",
+    img: p6,
+  },
+  {
+    name: "Affiliate World Americas",
+    description:
+      "Engineered and integrated additional functional pages and modular components to scale user journeys and platform content.",
+    tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
+    url: "http://affiliateworldconferences.com/americas",
+    img: p10,
+  },
+  {
     name: "Aspen Street Lodge",
     description:
-      "High-end real estate and lodging website with detailed property views and premium imagery.",
+      "Spearheaded the full-stack WordPress development from scratch, translating complex Figma designs into pixel-perfect, responsive custom themes.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     url: "https://aspenstreetlodge.com/",
     img: p1,
   },
   {
-    id: 2,
     name: "Waterline Square",
     description:
-      "Luxury real estate platform with condominiums and premium rentals, featuring galleries and virtual tours.",
+      "Spearheaded the full-stack WordPress development from scratch, translating complex Figma designs into pixel-perfect, responsive custom themes.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     url: "",
     img: px,
     // url: "http://18.188.183.102/",
   },
   {
-    id: 3,
     name: "D'USSE",
     description:
-      "Sophisticated brand website focused on product details and high-quality visual brand experiences.",
+      "Spearheaded the full-stack WordPress development from scratch, translating complex Figma designs into pixel-perfect, responsive custom themes.",
     tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     url: "https://www.dusse.com/",
     img: p3,
   },
   {
-    id: 4,
     name: "Gurneys Resorts",
     description:
-      "Comprehensive hospitality and real estate site for hotels and residential resort listings.",
+      "Developed custom Drupal themes full-stack using Twig, executing meticulous Figma-to-code conversions to ensure pixel-perfect design fidelity, responsive layouts, and robust backend scalability.",
     tech: ["Drupal", "Drupal E-Commerce"],
     url: "https://www.gurneysresorts.com/",
-    img: px,
-  },
-  {
-    id: 5,
-    name: "Live Gurneys",
-    description:
-      "Specialized real estate site featuring residential hotels and resorts with full specs and imagery.",
-    tech: ["WordPress", "ACF", "jQuery", "SCSS"],
     img: p5,
   },
   {
-    id: 6,
-    name: "Affiliate World Conferences",
+    name: "Live Gurneys",
     description:
-      "Main conference platform showcasing global events, speaker lineups, agendas, and ticket information.",
-    tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
-    url: "http://affiliateworldconferences.com/",
-    img: p6,
+      "Spearheaded the full-stack WordPress development from scratch, translating complex Figma designs into pixel-perfect, responsive custom themes.",
+    tech: ["WordPress", "ACF", "jQuery", "SCSS"],
+    img: px,
   },
   {
-    id: 7,
     name: "Affiliate World Europe",
     description:
-      "Regional event experience for Europe with localized schedules, venue details, and registration flow.",
+      "Engineered and integrated additional functional pages and modular components to scale user journeys and platform content.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/europe",
     img: p7,
   },
   {
-    id: 8,
     name: "Affiliate World Dubai",
     description:
-      "Dedicated conference landing site for Dubai featuring event highlights, partners, and attendee resources.",
+      "Engineered and integrated additional functional pages and modular components to scale user journeys and platform content.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/dubai",
     img: p8,
   },
   {
-    id: 9,
     name: "Affiliate World Asia",
     description:
-      "Asia-focused conference website with destination details, program information, and conversion-driven pages.",
+      "Engineered and integrated additional functional pages and modular components to scale user journeys and platform content.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "http://affiliateworldconferences.com/asia",
     img: p9,
   },
   {
-    id: 10,
-    name: "Affiliate World Americas",
-    description:
-      "Americas edition event site highlighting speakers, sessions, and streamlined attendee sign-up journeys.",
-    tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
-    url: "http://affiliateworldconferences.com/americas",
-    img: p10,
-  },
-  {
-    id: 11,
     name: "Affiliate World Meetups",
     description:
-      "Global meetup events connecting affiliate marketers, industry leaders, and networking opportunities.",
-    tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
+      "Executed a full-scale platform rebrand and front-end rebuild using React to elevate visual consistency and performance.",
+    tech: ["React", "Styled-Components", "Strapi"],
     url: "https://affiliateworldmeetups.com/",
     img: p11,
   },
   {
-    id: 12,
     name: "AdWorld Prime",
     description:
-      "Premier advertising and marketing event connecting industry leaders and professionals.",
+      "Maintained the production website and managed end-to-end visual updates, ensuring high design consistency across all pages.",
     tech: ["Next.js", "Styled-Components", "Strapi", "Redux Toolkit"],
     url: "https://adworldprime.com/",
     img: p12,
   },
   {
-    id: 13,
+
     name: "CreatorConf",
-    description: "Marketing website dedicated to the CreatorConf event.",
-    tech: ["ReactJS", "React Boilerplate"],
+    description: "Engineered the entire web page from scratch, translating design specifications into pixel-perfect, responsive components.",
+    tech: ["Next.js", "Styled-Components", "Strapi"],
     url: "https://creatorconf.com/",
-    img: px,
+    img: p14,
   },
   {
-    id: 14,
     name: "Conference Nights",
     description:
-      "Affiliate event listing site with curated schedules and details for company-related gatherings.",
-    tech: ["ReactJS", "React Boilerplate"],
+      "Handled the end-to-end design-to-code translation process, delivering clean and responsive with React. Leveraged Google Apps Script to build custom serverless automations and manage seamless data handling beneath the UI.",
+    tech: ["React", "React Boilerplate"],
+    url: "https://conferencenights.com/",
     img: px,
   },
 ];
@@ -213,6 +201,7 @@ export const experience = [
     id: 1,
     role: "Frontend Developer",
     company: "iStack Holdings",
+    url: "https://istackconferences.com/",
     location: "Makati, Philippines",
     period: "Aug 2022 - Apr 2026",
     details: [
@@ -222,8 +211,9 @@ export const experience = [
   },
   {
     id: 2,
-    role: "Web Designer / Web Developer",
+    role: "Senior Web Developer / Designer",
     company: "MyGolfingStore",
+    url: "https://mygolfingstore.com/",
     location: "US (Remote)",
     period: "Aug 2023 - Nov 2025",
     details: [
@@ -235,8 +225,9 @@ export const experience = [
   },
   {
     id: 3,
-    role: "Web Designer / Web Developer",
+    role: "Senior Web Developer / Designer",
     company: "IAmMarketing Solutions",
+    url: "https://iammarketingsolutions.com/",
     location: "US (Remote)",
     period: "Feb 2021 - Aug 2023",
     details: [
@@ -248,6 +239,7 @@ export const experience = [
     id: 4,
     role: "Fullstack Web Developer",
     company: "PenBrothers",
+    url: "https://penbrothers.com/",
     location: "Makati, Philippines",
     period: "Jan 2020 - Dec 2020",
     details: [
@@ -259,6 +251,7 @@ export const experience = [
     id: 5,
     role: "Frontend Developer",
     company: "iStack Holdings",
+    url: "https://istackconferences.com/",
     location: "Makati, Philippines",
     period: "Sep 2017 - Sep 2019",
     details: [
@@ -282,6 +275,7 @@ export const experience = [
     id: 7,
     role: "Web Developer / Front End",
     company: "ABSS Interactive GmbH",
+    url: "https://www.abss.at/",
     location: "Makati, Philippines",
     period: "Nov 2013 - Sep 2016",
     details: [
@@ -304,6 +298,7 @@ export const experience = [
     id: 9,
     role: "Graphic Designer",
     company: "AffinityX",
+    url: "https://affinityx.com/",
     location: "Quezon City, Philippines",
     period: "Sep 2010 - Dec 2011",
     details: [

@@ -22,7 +22,13 @@ export default function Experience() {
                   <div>
                     <h3 className="m-0 text-base font-bold text-[var(--text)]">{job.role}</h3>
                     <p className="mt-1 text-sm text-[var(--text2)]">
-                      {job.company}
+                      {job.url ? (
+                        <a href={job.url} target="_blank" rel="noopener noreferrer" className="underline">
+                          {job.company}
+                        </a>
+                      ) : (
+                        job.company
+                      )}
                       <span> · </span>
                       {job.location}
                     </p>
