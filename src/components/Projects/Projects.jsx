@@ -115,7 +115,7 @@ export default function Projects() {
                             decoding="async"
                             width="600"
                             height="338"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full transition-transform duration-300 hover:scale-105 object-cover"
                           />
                         </div>
                       )}
