@@ -1,7 +1,8 @@
 import { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import ContentPlaceholder from "./components/ContentPlaceholder";
+import ContentPlaceholder from "./components/ContentPlaceholder/ContentPlaceholder";
+import ContentPlaceholderHero from "./components/ContentPlaceholder/ContentPlaceholderHero";
 import useHashScrollOnLoad from "./hooks/useHashScrollOnLoad";
 import "./index.css";
 
@@ -52,9 +53,10 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="flex h-screen w-full items-center justify-center bg-[var(--bg)] text-[var(--text)]">
-        <div className="h-8 w-8 animate-spin rounded-full border-4 border-blue-600 border-t-transparent" />
-      </div>
+      <>
+        <ContentPlaceholderHero />
+        <ContentPlaceholder />
+      </>
     );
   }
 
@@ -63,7 +65,7 @@ export default function App() {
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <Suspense fallback={<ContentPlaceholder />}>
+        {/* <Suspense fallback={<ContentPlaceholder />}> */}
           <SkillsTech />
           <About />
           <Projects />
@@ -71,11 +73,11 @@ export default function App() {
           <WebDesign />
           {/* <GameDev /> */}
           <Experience />
-        </Suspense>
+        {/* </Suspense> */}
       </main>
-      <Suspense>
+      {/* <Suspense> */}
         <Footer />
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   );
 }

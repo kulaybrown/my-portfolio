@@ -18,9 +18,9 @@ export default function ContentPlaceholder() {
           background: #f0f4f6;
           background: linear-gradient(to right, #f0f4f6 8%, #e0e4e6 18%, #f0f4f6 33%);
           background-size: 800px 104px;
-          height: 100px;
           position: relative;
         }
+
         .background-masker {
           background: var(--surface2);
           position: absolute;
@@ -67,15 +67,7 @@ export default function ContentPlaceholder() {
           right: 0;
           height: 10px;
         }
-        .background-masker.vline {
-          top: 0;
-          left: 0;
-          width: 20px;
-          height: 100%;
-        }
-        .background-masker.p-relative {
-          position: relative;
-        }
+
       `}</style>
 
       {/* Main Container Wrapper */}
@@ -85,7 +77,7 @@ export default function ContentPlaceholder() {
             <div
               className="w-full max-w-[472px] min-h-[100px]"
             >
-              <div className="animated-background">
+              <div className="animated-background h-[100px]">
                 <div className="background-masker header-top"></div>
                 <div className="background-masker header-topb"></div>
                 <div className="background-masker header-top2"></div>
@@ -95,60 +87,17 @@ export default function ContentPlaceholder() {
                 <div className="background-masker header-top3c"></div>
               </div>
             </div>
-
-            <div
-              className="mt-10 w-full min-h-[100px] hidden md:block"
-            >
-              <div className="animated-background flex justify-evenly">
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
+          </div>
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] gap-4 mt-8">
+            {Array.from({ length: 26 }).map((_, index) => (
+              <div
+                key={index}
+                className="w-full max-w-[102px] min-h-[107px]"
+              >
+                <div className="animated-background h-[100%]" />
               </div>
-            </div>
-
-            <div
-              className="mt-5 w-full min-h-[100px] hidden md:block"
-            >
-              <div className="animated-background flex justify-evenly">
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-              </div>
-            </div>
-
-            <div
-              className="mt-5 w-full min-h-[100px] hidden md:block"
-            >
-              <div className="animated-background flex justify-evenly">
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-                <div className="background-masker p-relative vline"></div>
-              </div>
-            </div>
+            ))}
+              
           </div>
         </div>
       </div>
