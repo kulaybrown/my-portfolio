@@ -18,6 +18,7 @@ import peak from "../assets/images/personal/peak-thumbnail.jpg";
 import losworld from "../assets/images/personal/losworld-thumbnail.jpg";
 import valerian from "../assets/images/personal/valerian-thumbnail.jpg";
 import lumen from "../assets/images/personal/lumen-thumbnail.jpg";
+import careflow from "../assets/images/personal/careflow-thumbnail.jpg";
 
 export const projects = [
   {
@@ -156,6 +157,13 @@ export const personalProjects = [
     tags: ["Webflow"],
     liveUrl: "https://loss-stellar-site.webflow.io/",
     image: valerian
+  },
+  {
+    title: "Webflow development demo",
+    description: "This website showcases my work and experiments with Webflow, highlighting interactive designs and web development capabilities.",
+    tags: ["Webflow"],
+    liveUrl: "https://healthcare-staffing-e04b12.webflow.io/",
+    image: careflow
   },
   {
     title: "Personal gaming site",

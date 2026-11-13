@@ -3,6 +3,7 @@ import d1 from "../../assets/images/design/d1.webp";
 import d2 from "../../assets/images/design/d2.webp";
 import d3 from "../../assets/images/design/d3.webp";
 import d4 from "../../assets/images/design/d4.webp";
+import d5 from "../../assets/images/design/d5.webp";
 
 const designs = [
   {
@@ -36,6 +37,14 @@ const designs = [
     image: d4,
     link: null,
     builtWith: ["Shopify Hydrogen", "React"],
+  },
+  {
+    id: 5,
+    title: "Healthcare Staffing Platform",
+    description: "A modern web design concept for a healthcare staffing platform, emphasizing user-friendly navigation, responsive layouts, and professional aesthetics.",
+    image: d5,
+    link: "https://healthcare-staffing-e04b12.webflow.io/",
+    builtWith: ["Webflow"],
   },
 ];
 
@@ -173,7 +182,7 @@ export default function WebDesign() {
           </button>
 
           <div
-            className="relative max-h-[85vh] w-full max-w-[1500px] overflow-y-auto rounded-xl shadow-2xl bg-black/50 border border-white/10"
+            className="relative max-h-[85vh] w-full max-w-[1000px] overflow-y-auto rounded-xl shadow-2xl bg-black/50 border border-white/10"
             onClick={(e) => e.stopPropagation()}
           >
             <img
