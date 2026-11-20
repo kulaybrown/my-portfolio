@@ -4,6 +4,9 @@ import d2 from "../../assets/images/design/d2.webp";
 import d3 from "../../assets/images/design/d3.webp";
 import d4 from "../../assets/images/design/d4.webp";
 import d5 from "../../assets/images/design/d5.webp";
+import footgolf from "../../assets/images/design/footgolf.webp";
+import mgs from "../../assets/images/design/mgs.webp";
+import rhs from "../../assets/images/design/rhs.webp";
 
 const designs = [
   {
@@ -27,6 +30,30 @@ const designs = [
     title: "Minimalist Golf Game Concept",
     description: "Clean retro-inspired user interface design showcasing gameplay mechanics, level selections, and game stats inside.",
     image: d3,
+    link: null,
+    builtWith: null
+  },
+  {
+    id: 6,
+    title: "Footgolf Concept",
+    description: "A creative web design concept for a footgolf platform, highlighting interactive course maps, player stats, and event management features.",
+    image: footgolf,
+    link: null,
+    builtWith: null
+  },
+  {
+    id: 7,
+    title: "MGS Project",
+    description: "A modern web design concept for the MGS project, focusing on sleek UI, responsive layouts, and engaging user interactions.",
+    image: mgs,
+    link: null,
+    builtWith: null
+  },
+  {
+    id: 8,
+    title: "Golf Project",
+    description: "A contemporary web design concept for the RHS project, emphasizing clean design, intuitive navigation, and responsive elements.",
+    image: rhs,
     link: null,
     builtWith: null
   },
